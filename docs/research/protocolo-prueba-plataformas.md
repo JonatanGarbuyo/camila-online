@@ -1,159 +1,180 @@
 # Protocolo de prueba — Tiendanube vs DonWeb vs Empretienda
 
-_Estado: listo para ejecutar manualmente._
+_Estado: protocolo listo. La prueba práctica en paneles la ejecutarán manualmente Camila o Jonatan._
 
-Las cuentas de prueba se crean y operan **manualmente por Camila o Jonatan**. No automatizar altas ni guardar credenciales reales en GitHub.
+_Última revisión documental: 2026-09-16._
 
 ## Objetivo
 
-Comparar las tres finalistas con el mismo caso de uso y medir complejidad operativa real.
+Comparar las tres finalistas con el mismo caso de uso y medir la complejidad operativa real para una persona no técnica.
 
-No buscamos la plataforma con más funciones, sino la que permita operar la tienda con la menor complejidad y costo total razonables.
+No buscamos la plataforma con más funciones, sino la que permita operar correctamente con la menor complejidad y costo total razonables.
 
 ## Reglas
 
-- Usar datos ficticios.
-- No guardar contraseñas, tokens, CUIT, datos bancarios ni credenciales.
-- No contratar planes pagos ni generar cargos sin aprobación explícita.
-- Si una integración exige una cuenta real del comercio, marcar `PENDIENTE CON TITULAR`.
-- No compartir una contraseña entre dueño y Camila.
-
-## Estados
-
-- `PASS`: cubre el caso sin workaround relevante.
-- `WARN`: funciona, pero agrega pasos o trabajo manual.
-- `FAIL`: bloquea un requisito o exige una práctica insegura/no aceptable.
-- `PENDIENTE`: requiere cuenta/credencial real del comercio.
-
-Registrar además tiempo aproximado, cantidad de paneles utilizados y observaciones.
+- Las cuentas de prueba se crean manualmente por Camila o Jonatan.
+- Usar datos ficticios siempre que sea posible.
+- No guardar contraseñas, tokens, credenciales, CUIT ni datos bancarios en GitHub.
+- No contratar planes pagos ni generar cargos sin aprobación explícita de `@JonatanGarbuyo`.
+- Si una integración exige una cuenta real del comercio, marcarla `PENDIENTE CON TITULAR`.
 
 ## Gates obligatorios
 
-### 1. Acceso seguro
+Una plataforma no puede elegirse si falla sin alternativa simple y segura:
 
-El comercio debe poder ser titular y Camila operar sin compartir contraseña.
+1. acceso separado para comercio + Camila sin compartir contraseña;
+2. talles, colores y stock por variante;
+3. checkout autoservicio con pago local y envío nacional;
+4. operación diaria entendible para Camila sin desarrollo.
 
-### 2. Catálogo de ropa
+## Cómo medir fragmentación
 
-Debe manejar talle, color, stock por combinación, SKU, precio y datos de envío.
+### Pagos
 
-### 3. Venta autoservicio
+Registrar si para cobrar, conciliar, devolver o reintegrar dinero hay que salir del panel principal de la tienda.
 
-El comprador debe completar:
+Eso **no es automáticamente malo**. La pregunta es si Camila y el comercio aceptan esa separación del flujo y si la trazabilidad sigue siendo clara.
 
-`producto → variante → carrito → datos → pago → envío → confirmación`
+El criterio es independiente del proveedor de pago.
 
-sin intervención humana obligatoria.
+### Envíos
 
-### 4. Operación diaria
+Registrar si para generar etiquetas, despachar, consultar tracking, cancelar o resolver incidencias hay que usar otro panel.
 
-Camila debe poder ver pedidos, distinguir pagos, preparar envíos, actualizar stock/precio, cancelar pedidos, registrar reintegros y resolver incidencias sin desarrollo.
+La fragmentación logística pesa más negativamente porque esas tareas forman parte del trabajo operativo cotidiano.
 
-## Catálogo ficticio común
+## Mini catálogo común
 
-### Producto A — Remera Básica Algodón
+Usar los mismos productos en las tres plataformas:
 
-- ARS 20.000
-- colores: Negro, Blanco
-- talles: S, M, L
-- stock diferente por combinación
-- una combinación agotada
-- peso: 0,30 kg
-- paquete: 30 × 25 × 5 cm
+### Producto A — Remera básica algodón
 
-### Producto B — Jean Recto Azul
+- precio: ARS 20.000;
+- colores: negro y blanco;
+- talles: S, M, L;
+- stock diferente por combinación;
+- SKU por variante;
+- peso: 0,30 kg.
 
-- ARS 45.000
-- talles 36, 38, 40, 42
-- stock por talle
-- peso: 0,70 kg
+### Producto B — Jean recto azul
 
-### Producto C — Cinturón Negro
+- precio: ARS 45.000;
+- talles 36, 38, 40, 42;
+- stock por talle;
+- peso: 0,70 kg.
 
-- ARS 15.000
-- sin variantes
-- stock: 3
-- peso: 0,20 kg
+### Producto C — Cinturón negro
 
-Crear además categorías, página de envíos, cambios/devoluciones y contacto.
+- precio: ARS 15.000;
+- sin variantes;
+- stock: 3;
+- peso: 0,20 kg.
+
+## Contenido común
+
+Crear:
+
+- categorías `Remeras` y `Jeans`;
+- página `Envíos`;
+- página `Cambios y devoluciones`;
+- página `Contacto`;
+- WhatsApp si puede configurarse sin usar datos sensibles.
+
+Para publicación/SEO usar [`/wiki/publicacion-y-seo.md`](../../wiki/publicacion-y-seo.md).
 
 ## Pruebas
 
-### Alta
-
-Registrar si pide tarjeta, qué datos exige, subdominio disponible y claridad del onboarding.
-
-### Producto y variantes
-
-Crear la remera con color+talle, stock por combinación, SKU, peso y una variante agotada. Luego modificar stock y precio.
-
-### SEO/publicación
-
-Aplicar el procedimiento de `../playbook/04-seo-y-publicacion.md`: título, descripción, categoría, title/meta, URL, imágenes y sitemap/indexación cuando corresponda.
-
-### Accesos
-
-Crear dos identidades si es posible:
-
-- Propietario
-- Operador (Camila)
-
-Verificar qué puede hacer cada una y si el operador puede desactivarse sin cambiar la contraseña del propietario.
-
-### Pago
-
-Validar el flujo hasta donde sea seguro sin credenciales reales.
-
-**Separar fragmentación de pago de fragmentación logística.**
-
-Un panel externo de Mercado Pago puede ser aceptable si el comercio ya usa esa cuenta y Camila está cómoda operándola para conciliaciones/reintegros.
+### 1. Alta inicial
 
 Registrar:
 
-- dónde se configura;
-- dónde se consulta la transacción;
-- dónde se hace un reintegro;
-- si el estado vuelve correctamente a la tienda;
-- si hay conciliación manual.
+- tiempo de alta;
+- si exige tarjeta;
+- datos requeridos;
+- subdominio;
+- claridad del asistente inicial.
 
-### Envío
+### 2. Producto y variantes
 
-Este punto pesa especialmente en la decisión.
+- crear la remera;
+- cargar color + talle;
+- stock distinto por combinación;
+- dejar una variante sin stock;
+- cargar SKU, peso y dimensiones;
+- cambiar stock y precio;
+- observar comportamiento público.
+
+### 3. Stock agotado
+
+Simular una venta física y actualizar una variante. Verificar rapidez, claridad y riesgo de sobreventa.
+
+### 4. Publicación y SEO
+
+Aplicar la guía de `/wiki/publicacion-y-seo.md` y comprobar qué campos existen y cuáles automatiza la plataforma.
+
+### 5. Accesos
+
+Intentar crear:
+
+- `Propietario`;
+- `Operador` (Camila).
+
+Verificar permisos, acceso a configuración sensible y posibilidad de revocar al operador sin cambiar la contraseña del propietario.
+
+### 6. Pago
+
+Validar hasta donde sea seguro:
+
+- checkout;
+- cambio de estado de pago;
+- conciliación;
+- devolución/reintegro;
+- trazabilidad entre tienda y proveedor de pago;
+- cantidad de paneles utilizados.
+
+Registrar si la fragmentación de pago resulta aceptable o incómoda para Camila/comercio.
+
+### 7. Envío
 
 Verificar:
 
-- cotización en checkout;
-- generación/pago de etiqueta;
+- cotización;
+- domicilio/sucursal;
+- etiqueta;
 - impresión;
 - tracking;
 - cancelación;
 - seguro;
 - cantidad de paneles utilizados.
 
-**WARN fuerte** si para cada pedido hay que entrar habitualmente a otro panel para generar etiquetas, despachar o seguir el envío.
+Penalizar especialmente la necesidad habitual de operar otro panel para estas tareas.
 
-### Pedido, cancelación y reintegro
+### 8. Pedido, cancelación y reintegro
 
-Verificar notificación, estado de pago, estado de envío, cancelación, restauración de stock y trazabilidad del reintegro.
+Comprobar pedido, pago, stock, cancelación, restauración de stock y evidencia de reintegro.
 
-### Métricas
+### 9. Métricas y atribución
 
-Usar un enlace con UTM y comprobar si puede identificarse fuente/campaña y revenue cuando el trial lo permita.
+Usar un enlace con UTM y verificar si puede distinguirse fuente/campaña y revenue cuando corresponda.
 
-### Portabilidad
+### 10. Portabilidad
 
-Verificar exportación de productos, ventas, clientes, imágenes/reportes cuando exista.
+Verificar exportación de productos, ventas, clientes y reportes.
 
-### Móvil
+### 11. Móvil
 
-Probar búsqueda, variante, carrito, checkout, envío y pago desde teléfono.
+Desde teléfono:
 
-### Operación diaria simulada
+`producto → variante → carrito → envío → pago`
+
+Registrar fricciones.
+
+### 12. Operación diaria
 
 Simular:
 
 1. revisar tres pedidos;
-2. cambiar stock de dos variantes;
+2. actualizar dos stocks;
 3. cambiar un precio;
 4. identificar pedidos pagos;
 5. preparar un envío;
@@ -161,15 +182,18 @@ Simular:
 7. cancelar una orden;
 8. consultar una métrica.
 
-Registrar tiempo total y paneles abiertos.
+Registrar tiempo, paneles abiertos y tutoriales necesarios.
 
 ## Hoja de resultados
 
+Por plataforma completar:
+
 | Prueba | Estado | Tiempo | Paneles | Observación |
 | --- | --- | ---: | ---: | --- |
-| Alta | PENDIENTE | — | — | |
+| Alta inicial | PENDIENTE | — | — | |
 | Producto/variantes | PENDIENTE | — | — | |
-| SEO/publicación | PENDIENTE | — | — | |
+| Stock agotado | PENDIENTE | — | — | |
+| Publicación/SEO | PENDIENTE | — | — | |
 | Accesos | PENDIENTE | — | — | |
 | Pago | PENDIENTE | — | — | |
 | Envío | PENDIENTE | — | — | |
@@ -179,6 +203,6 @@ Registrar tiempo total y paneles abiertos.
 | Móvil | PENDIENTE | — | — | |
 | Operación diaria | PENDIENTE | — | — | |
 
-## Criterio de salida
+Usar `PASS`, `WARN`, `FAIL` o `PENDIENTE`.
 
-Actualizar `shortlist-plataformas.md` con hechos observados. La prueba produce evidencia; la decisión final de plataforma se toma aparte y requiere aprobación de `@JonatanGarbuyo`.
+Al terminar, actualizar `docs/research/shortlist-plataformas.md` y dejar #19 listo para cerrar. La selección final sigue en #9.
