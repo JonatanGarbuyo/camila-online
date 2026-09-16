@@ -2,17 +2,19 @@
 
 Repositorio de discovery, decisiones, investigación y documentación operativa para habilitar y administrar tiendas online.
 
-Este repositorio funciona como **base de conocimiento persistente del proyecto**: los chats son temporales; las decisiones, investigaciones, dudas abiertas, playbooks y contexto que deban sobrevivir entre conversaciones deben quedar documentados acá.
+Este repositorio funciona como **base de conocimiento persistente del proyecto**: los chats son temporales; las decisiones, investigaciones, dudas abiertas y procedimientos que deban sobrevivir entre conversaciones deben quedar documentados acá.
 
 ## Dos entradas distintas
 
 ### Para Camila y otros operadores no técnicos
 
-👉 [Guía práctica de la tienda](docs/INDEX.md)
+👉 [Wiki práctica de la tienda](wiki/README.md)
 
-Esa guía contiene solo procedimientos operativos claros en español: publicación de productos, catálogo, pagos, envíos, atención, métricas y operación diaria a medida que se vayan completando.
+`/wiki/` reemplaza, dentro de este repositorio, el uso de GitHub Wiki que no podemos mantener desde este entorno.
 
-No debe incluir Wayfinder, Issues ni discusiones internas del proyecto.
+La wiki contiene solamente procedimientos claros en español: publicación de productos, catálogo, pagos, envíos, atención, métricas y operación diaria a medida que se vayan completando.
+
+No debe incluir Wayfinder, Issues, comparaciones de plataformas ni discusiones internas del proyecto.
 
 ### Para chats, agentes y trabajo de proyecto
 
@@ -32,15 +34,14 @@ Diseñar un MVP de e-commerce **no-code**, de bajo o nulo costo fijo, que cubra:
 - SEO y buenas prácticas de publicación;
 - medición de adquisición, referidos y ventas.
 
-El primer caso es un comercio de ropa. El aprendizaje debe convertirse progresivamente en un **playbook reusable** para otros comercios, sin construir prematuramente una plataforma/SaaS propia.
+El primer caso es un comercio de ropa. El aprendizaje debe convertirse progresivamente en una guía reusable para otros comercios, sin construir prematuramente una plataforma/SaaS propia.
 
 ## Organización del conocimiento
 
 - **Issues:** preguntas, investigación en curso, discusión y decisiones.
 - **`docs/research/`:** hechos verificados, comparaciones y fuentes externas.
 - **`docs/wayfinder/`:** estado de discovery y planificación.
-- **`docs/playbook/`:** manual operativo para personas no técnicas.
-- **`docs/INDEX.md`:** portada simple de la guía operativa.
+- **`wiki/`:** base de conocimiento práctica y procedimientos para operadores no técnicos.
 
 ## Estado de plataforma
 
