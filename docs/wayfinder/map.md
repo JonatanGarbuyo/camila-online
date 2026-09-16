@@ -17,13 +17,10 @@ El resultado de este mapa es **decisión y especificación, no implementación p
 - El catálogo/stock puede comenzar con administración manual; no se busca sincronización compleja inicialmente.
 - Prioridad: costo fijo nulo o bajo, pero evaluando costo total real por venta y carga operativa.
 - Se acepta un subdominio gratuito durante la validación; dominio propio no es requisito de lanzamiento.
-- Requeridos: catálogo, links desde Facebook/Instagram, pago online, envíos/seguros, WhatsApp.
-- Nice to have: catálogo/shop en WhatsApp, métricas, observabilidad y atribución de links/referidos.
 - Posible oportunidad futura: ofrecer el mismo servicio a otros comercios. No diseñar ahora un SaaS/plataforma genérica; separar aprendizaje reusable de restricciones específicas de indumentaria.
-- Investigación con fuentes primarias y condiciones vigentes para Argentina.
-- Los tickets #6 y #7 quedan preparados como handoff para que Camila los resuelva desde su chat dentro del Project.
+- Los tickets #6, #7 y #13 son handoff a Camila porque requieren conocimiento real del negocio.
 
-## Decisions so far
+## Decisions / research so far
 
 - **MVP no-code:** la primera versión se arma con herramientas administradas; software custom queda fuera del destino actual.
 - **Venta autoservicio principal:** catálogo → carrito → pago → envío debe funcionar sin intervención humana; WhatsApp queda como asistencia.
@@ -32,33 +29,44 @@ El resultado de este mapa es **decisión y especificación, no implementación p
 - **Pagos orientados a costo/conversión:** permitir tarjeta y favorecer transferencia cuando sea razonable.
 - **Atención humana por WhatsApp:** bots/IA quedan para una futura necesidad de escala.
 - **Subdominio aceptable para validación:** dominio propio no bloquea el MVP.
-- **[Comparar plataformas no-code para el MVP](https://github.com/JonatanGarbuyo/camila-online/issues/2):** Tiendanube Inicial queda como baseline a validar por costo fijo $0; Empretienda como fallback si una restricción concreta bloquea el caso; WhatsApp Business + links de pago queda como canal auxiliar, no storefront principal.
-- **[Evaluar pagos y costo efectivo por venta](https://github.com/JonatanGarbuyo/camila-online/issues/3):** Pago Nube cubre el MVP; tarjeta/débito/MODO + transferencia integrados. Propuesta reversible: liberación a 14 días orientada a costo si el flujo de caja lo tolera; 7 días si hace falta liquidez más rápida.
-- **[Validar logística nacional y seguro para indumentaria](https://github.com/JonatanGarbuyo/camila-online/issues/4):** Andreani/Envío Nube cubre el MVP nacional de ropa. El plan Inicial no incluye logística reversa; cambios/devoluciones requieren un flujo separado. Seguro opcional a evaluar con ticket y volumen reales.
-- **[Definir atribución y métricas mínimas](https://github.com/JonatanGarbuyo/camila-online/issues/5):** UTMs + GA4 nativo + Meta Pixel/CAPI cubren la medición inicial sin costo fijo adicional; no duplicar eventos estándar con GTM.
+- **[#2 Plataformas](https://github.com/JonatanGarbuyo/camila-online/issues/2):** Tiendanube Inicial es la baseline a validar por costo fijo $0; Empretienda es fallback si aparece una restricción concreta; social-first queda como canal auxiliar.
+- **[#3 Pagos](https://github.com/JonatanGarbuyo/camila-online/issues/3):** Pago Nube cubre el MVP; tarjeta/débito/MODO + transferencia integrados. Propuesta reversible: 14 días si se prioriza costo y el flujo de caja lo tolera; 7 días si hace falta liquidez más rápida.
+- **[#4 Logística](https://github.com/JonatanGarbuyo/camila-online/issues/4):** Andreani/Envío Nube cubre el MVP nacional de ropa. El plan Inicial no incluye logística reversa; cambios/devoluciones requieren flujo separado.
+- **[#5 Medición](https://github.com/JonatanGarbuyo/camila-online/issues/5):** UTMs + GA4 nativo + Meta Pixel/CAPI cubren la medición inicial sin costo fijo adicional.
+- **[#11 Consumo y devoluciones](https://github.com/JonatanGarbuyo/camila-online/issues/11):** las ventas a distancia tienen derecho de arrepentimiento; los costos de la devolución legal pueden recaer en el vendedor. Tiendanube incluye flujo de arrepentimiento, pero hay que verificar antes del lanzamiento su implementación respecto de la Disposición 954/2025. Ver `docs/research/legal-consumer.md`.
+- **[#12 Facturación y titularidad](https://github.com/JonatanGarbuyo/camila-online/issues/12):** el canal online debe entrar al circuito fiscal del comercio. Propuesta no aprobada: tienda/cobros/facturación a nombre del comercio; Camila administra el canal y cobra su servicio por separado. El plan Inicial no ofrece permisos diferenciados entre administradores. Ver `docs/research/fiscal-invoicing.md`.
+- **[#14 WhatsApp y redes](https://github.com/JonatanGarbuyo/camila-online/issues/14):** WhatsApp Business + botón nativo cubren atención humana; el catálogo puede sincronizarse vía Meta Business Suite. Facebook/Instagram Shopping no están disponibles en Argentina, por lo que redes deben funcionar como adquisición hacia la tienda. Ver `docs/research/social-whatsapp.md`.
 
 ## Frontier
 
-### Grilling — [Definir operación diaria de catálogo, stock y despacho](https://github.com/JonatanGarbuyo/camila-online/issues/6)
-**Question:** ¿Cómo se administran hoy productos, precios y stock; con qué frecuencia cambian; quién prepara/despacha pedidos; y cuánto trabajo manual diario es aceptable para Camila?
+### Grilling — [#6 Definir operación diaria de catálogo, stock y despacho](https://github.com/JonatanGarbuyo/camila-online/issues/6)
 
-Estado: **handoff a Camila**. El issue contiene las preguntas concretas para su próximo chat.
+Estado: **handoff a Camila**. Relevar sistema actual de stock/facturación, frecuencia de cambios, responsables y volumen manual aceptable.
 
-### Grilling — [Definir catálogo, variantes y política de stock](https://github.com/JonatanGarbuyo/camila-online/issues/7)
-**Question:** ¿Cuántos productos/SKUs y variantes maneja el negocio, cómo se representan talles y colores, y qué política debe aplicarse ante stock bajo o agotado?
+### Grilling — [#7 Definir catálogo, variantes y política de stock](https://github.com/JonatanGarbuyo/camila-online/issues/7)
 
-Estado: **handoff a Camila**. El issue contiene las preguntas concretas para su próximo chat.
+Estado: **handoff a Camila**. Relevar cantidad de productos/SKUs, talles/colores y política ante stock bajo o agotado.
+
+### Grilling — [#13 Confirmar titularidad, facturación y accesos con Camila](https://github.com/JonatanGarbuyo/camila-online/issues/13)
+
+Estado: **handoff a Camila**. Relevar quién factura hoy, qué herramienta usan y si es aceptable que el comercio sea titular de cuentas/cobros mientras Camila administra con acceso propio.
 
 ## Blocked
 
-- [Definir cambios, devoluciones y logística inversa](https://github.com/JonatanGarbuyo/camila-online/issues/8) — blocked by #6 y #7. El plan Inicial no ofrece logística reversa integrada, así que este ticket debe definir el flujo operativo real.
-- [Elegir plataforma del MVP](https://github.com/JonatanGarbuyo/camila-online/issues/9) — blocked by #6, #7 y #8. Esta es la decisión final de plataforma y requerirá aprobación explícita de `@JonatanGarbuyo`.
-- [Definir modelo comercial del servicio de administración](https://github.com/JonatanGarbuyo/camila-online/issues/10) — blocked by #6 y #9. Hipótesis a evaluar: el comercio paga los costos directos de plataforma; Camila puede cobrar un fee pequeño de administración y eventualmente una comisión por ventas online. Valores y estructura requieren aprobación de `@JonatanGarbuyo`.
+- [#8 Definir cambios, devoluciones y logística inversa](https://github.com/JonatanGarbuyo/camila-online/issues/8) — blocked by #6 y #7. Debe separar arrepentimiento legal de cambio comercial por talle/color.
+- [#9 Elegir plataforma del MVP](https://github.com/JonatanGarbuyo/camila-online/issues/9) — blocked by #6, #7, #8 y #13. Requiere aprobación explícita de `@JonatanGarbuyo`.
+- [#10 Definir modelo comercial del servicio de administración](https://github.com/JonatanGarbuyo/camila-online/issues/10) — blocked by #6 y #9. Hipótesis: comercio paga costos directos; Camila cobra fee de administración y eventualmente comisión. Valores/estructura requieren aprobación de `@JonatanGarbuyo`.
+
+## Launch checks pendientes
+
+- Verificar en una tienda real la ubicación/comportamiento del Botón de Arrepentimiento frente a la Disposición 954/2025.
+- Validar que el esquema de acceso total de administradores del plan Inicial sea aceptable para dueños + Camila.
+- Confirmar que el circuito actual de facturación pueda absorber pedidos online manualmente al comienzo.
+- Diseñar packaging y rutina de despacho.
+- Hacer una compra de prueba completa una vez configurada la tienda candidata.
 
 ## Not yet specified
 
-- Packaging y proceso de despacho, hasta conocer la operación actual.
-- Facturación fiscal/ARCA y automatización contable según situación del negocio.
 - Prototipo visual del storefront una vez elegida la plataforma.
 - Criterio concreto para pasar de subdominio a dominio propio/plan pago.
 - Umbral de volumen que justificaría automatización de WhatsApp, stock o reporting.
