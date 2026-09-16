@@ -1,128 +1,97 @@
-# Playbook operativo — tienda online
+# Manual operativo — Tienda online
 
-[← Volver al índice general](../INDEX.md) · [Ver investigación](../research/README.md) · [Ver estado Wayfinder](../wayfinder/map.md)
+[← Volver a la guía práctica](../INDEX.md)
 
-Este directorio contendrá el manual durable para **levantar, lanzar y administrar** una tienda online usando la arquitectura finalmente aprobada.
+Este manual está pensado para que Camila u otro operador no técnico pueda **levantar, publicar y administrar** una tienda online sin depender de chats anteriores.
 
-El playbook es conocimiento reusable del servicio. Debe poder ser seguido por Camila u otro operador no técnico sin depender de chats anteriores.
+Cada procedimiento debe explicar:
 
-## Estado
+1. qué hay que hacer;
+2. cómo hacerlo;
+3. cómo verificar que quedó bien;
+4. qué errores comunes evitar.
 
-**Borrador de estructura.** La versión operativa debe completarse después de aprobar la plataforma en #9 y validar la operación real (#6, #7, #8, #13).
+## Procedimientos
 
-Leyenda:
+### 1. Alta, titularidad y accesos
 
-- ✅ procedimiento usable;
-- 📝 pendiente de completar;
-- 🔒 depende de una decisión o información todavía abierta.
+En preparación.
 
-## Índice del playbook
+Debe cubrir quién crea y posee cada cuenta, cómo se dan accesos y qué información nunca debe compartirse.
 
-1. 🔒 `01-alta-y-titularidad.md`
-   - quién crea y posee cada cuenta;
-   - usuarios y permisos;
-   - qué datos nunca compartir por chat/repo.
+### 2. Configuración inicial
 
-2. 🔒 `02-configuracion-inicial.md`
-   - identidad de marca;
-   - plantilla/diseño;
-   - datos legales y de contacto;
-   - subdominio inicial y criterio para dominio propio.
+En preparación.
 
-3. 🔒 `03-catalogo-y-stock.md`
-   - alta de productos;
-   - fotos;
-   - talles/colores/variantes;
-   - SKU;
-   - stock y reconciliación con local físico.
+Debe cubrir identidad del comercio, diseño básico, datos legales/contacto y dominio o subdominio.
 
-4. ✅ [`04-seo-y-publicacion.md`](04-seo-y-publicacion.md)
-   - títulos, descripciones, categorías y URLs;
-   - SEO title/meta description;
-   - imágenes y texto alternativo;
-   - Search Console/sitemap;
-   - Google Shopping;
-   - checklist antes de publicar un producto.
+### 3. Catálogo y stock
 
-5. 📝 `05-pagos.md`
-   - alta/configuración sin guardar credenciales;
-   - medios de pago;
-   - plazo de acreditación;
-   - conciliación y reintegros.
-   - investigación fuente: [`../research/payments.md`](../research/payments.md).
+En preparación.
 
-6. 📝 `06-envios.md`
-   - configuración logística;
-   - pesos/dimensiones;
-   - etiquetas;
-   - seguro;
-   - despacho y seguimiento.
-   - investigación fuente: [`../research/shipping-insurance.md`](../research/shipping-insurance.md).
+Debe cubrir alta de productos, talles, colores, variantes, SKU, precios, stock y coordinación con el local físico.
 
-7. 🔒 `07-cambios-devoluciones.md`
-   - arrepentimiento legal;
-   - cambios de talle;
-   - devolución y reintegro;
-   - logística inversa.
-   - investigación legal: [`../research/legal-consumer.md`](../research/legal-consumer.md).
+### 4. Publicación y SEO
 
-8. 📝 `08-whatsapp-y-atencion.md`
-   - WhatsApp Business;
-   - horarios/responsabilidad;
-   - respuestas frecuentes;
-   - escalamiento de incidencias.
-   - investigación fuente: [`../research/social-whatsapp.md`](../research/social-whatsapp.md).
+✅ [Abrir procedimiento de publicación y SEO](04-seo-y-publicacion.md)
 
-9. 📝 `09-redes-y-adquisicion.md`
-   - Instagram/Facebook;
-   - UTMs;
-   - links de bio/story/post/referidos;
-   - recomendaciones de publicación.
+Incluye nombres, descripciones, categorías, URLs, imágenes, texto alternativo, Search Console, sitemap, Google Shopping y checklist antes de publicar.
 
-10. 📝 `10-medicion-y-reporte.md`
-    - GA4;
-    - Meta Pixel/CAPI;
-    - KPIs semanales;
-    - atribución y ventas asistidas.
-    - investigación fuente: [`../research/measurement.md`](../research/measurement.md).
+### 5. Pagos y reintegros
 
-11. 🔒 `11-operacion-diaria.md`
-    - checklist diario/semanal;
-    - pedidos pendientes;
-    - stock/precio;
-    - mensajes;
-    - despachos;
-    - reclamos y devoluciones.
+En preparación.
 
-12. 🔒 `12-lanzamiento.md`
-    - checklist técnico/operativo/legal;
-    - compra de prueba;
-    - pago de prueba;
-    - envío de prueba;
-    - verificación SEO/analytics;
-    - go/no-go.
+Debe cubrir cobros, acreditación, conciliación, cancelaciones y devoluciones de dinero.
+
+### 6. Envíos y seguimiento
+
+En preparación.
+
+Debe cubrir peso/dimensiones, etiquetas, seguro, despacho y seguimiento.
+
+### 7. Cambios y devoluciones
+
+En preparación.
+
+Debe cubrir arrepentimiento, cambios de talle, devoluciones, reintegros y logística inversa.
+
+### 8. WhatsApp y atención
+
+En preparación.
+
+Debe cubrir horarios, respuestas frecuentes y manejo de incidencias.
+
+### 9. Redes y adquisición
+
+En preparación.
+
+Debe cubrir Instagram/Facebook, links, UTMs y recomendaciones de publicación.
+
+### 10. Métricas y reporte
+
+En preparación.
+
+Debe cubrir ventas, fuentes de tráfico, conversión, ticket promedio y reporte semanal.
+
+### 11. Operación diaria
+
+En preparación.
+
+Debe cubrir pedidos pendientes, stock/precio, mensajes, despachos, reclamos y devoluciones.
+
+### 12. Lanzamiento
+
+En preparación.
+
+Debe incluir una compra de prueba, pago, envío, analytics, SEO y checklist final.
+
+## Reglas de seguridad
+
+- No guardar contraseñas, tokens, API keys ni datos de tarjeta en el manual.
+- Evitar compartir una misma contraseña entre varias personas.
+- Usar accesos separados cuando la plataforma lo permita.
+- Confirmar antes de realizar acciones que generen cargos o afecten pedidos reales.
 
 ## Regla editorial
 
-El playbook debe explicar **qué hacer y cómo verificar que quedó bien**. No debe contener contraseñas, tokens, API keys, CUIT de clientes, datos de tarjetas ni credenciales.
-
-Cuando un procedimiento cambie por actualización de un proveedor, actualizar el playbook y registrar fecha/fuente cuando la diferencia sea material.
-
-## SEO/publicación — criterios independientes de plataforma
-
-El procedimiento usable ya vive en [`04-seo-y-publicacion.md`](04-seo-y-publicacion.md). En resumen, el playbook exige:
-
-- nombres de producto entendibles por clientes, no códigos internos;
-- descripciones originales con material, calce, medidas/talles, color, cuidados y atributos relevantes;
-- categorías basadas en cómo busca la gente, no solo en organización interna;
-- título SEO y meta descripción revisados antes de publicar;
-- URL corta y descriptiva cuando la plataforma permita editarla;
-- imágenes nítidas y texto alternativo descriptivo cuando esté disponible;
-- guía de talles en texto/HTML además de imágenes cuando sea posible;
-- páginas de contenido: quiénes somos, cómo comprar, envíos, cambios/devoluciones, preguntas frecuentes y contacto;
-- Search Console + sitemap una vez pública la tienda;
-- UTMs en links comerciales de Instagram/Facebook/WhatsApp/referrals;
-- no copiar descripciones del proveedor o de otras tiendas;
-- revisar que precio, stock, variantes, peso y dimensiones sean correctos antes de publicar.
-
-El SEO técnico del proveedor ayuda, pero el contenido y la disciplina editorial siguen siendo responsabilidad del operador.
+Este manual es para operadores no técnicos. Mantenerlo simple, concreto y orientado a tareas. Las discusiones internas del proyecto, comparaciones de proveedores y decisiones técnicas no pertenecen acá.
