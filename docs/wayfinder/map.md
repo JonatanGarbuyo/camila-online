@@ -30,23 +30,11 @@ El resultado de este mapa es **decisión y especificación, no implementación p
 - **Atención humana por WhatsApp:** bots/IA quedan para una futura necesidad de escala.
 - **Subdominio aceptable para validación:** dominio propio no bloquea el MVP.
 - **[Comparar plataformas no-code para el MVP](https://github.com/JonatanGarbuyo/camila-online/issues/2):** Tiendanube Inicial queda como baseline a validar por costo fijo $0; Empretienda como fallback si una restricción concreta bloquea el caso; WhatsApp Business + links de pago queda como canal auxiliar, no storefront principal.
+- **[Evaluar pagos y costo efectivo por venta](https://github.com/JonatanGarbuyo/camila-online/issues/3):** Pago Nube cubre el MVP; tarjeta/débito/MODO + transferencia integrados. Propuesta reversible: liberación a 14 días orientada a costo si el flujo de caja lo tolera; 7 días si hace falta liquidez más rápida.
+- **[Validar logística nacional y seguro para indumentaria](https://github.com/JonatanGarbuyo/camila-online/issues/4):** Andreani/Envío Nube cubre el MVP nacional de ropa. El plan Inicial no incluye logística reversa; cambios/devoluciones requieren un flujo separado. Seguro opcional a evaluar con ticket y volumen reales.
+- **[Definir atribución y métricas mínimas](https://github.com/JonatanGarbuyo/camila-online/issues/5):** UTMs + GA4 nativo + Meta Pixel/CAPI cubren la medición inicial sin costo fijo adicional; no duplicar eventos estándar con GTM.
 
 ## Frontier
-
-### Research — [Evaluar pagos y costo efectivo por venta](https://github.com/JonatanGarbuyo/camila-online/issues/3)
-**Question:** ¿Qué combinación de medios de pago y plazo de acreditación conviene para el MVP, considerando costo efectivo, conversión, cuotas, conciliación y operación?
-
-Estado: investigación inicial en `docs/research/payments.md`.
-
-### Research — [Validar logística nacional y seguro para indumentaria](https://github.com/JonatanGarbuyo/camila-online/issues/4)
-**Question:** ¿Andreani mediante el plan Inicial cubre correctamente el MVP de indumentaria para envíos nacionales, y qué política de seguro/cobertura conviene?
-
-Estado: investigación inicial en `docs/research/shipping-insurance.md`.
-
-### Research — [Definir atribución y métricas mínimas](https://github.com/JonatanGarbuyo/camila-online/issues/5)
-**Question:** ¿Qué medición mínima permite atribuir visitas y ventas a Instagram, Facebook, WhatsApp y referidos sin sumar costo fijo ni complejidad innecesaria?
-
-Estado: propuesta inicial en `docs/research/measurement.md`.
 
 ### Grilling — [Definir operación diaria de catálogo, stock y despacho](https://github.com/JonatanGarbuyo/camila-online/issues/6)
 **Question:** ¿Cómo se administran hoy productos, precios y stock; con qué frecuencia cambian; quién prepara/despacha pedidos; y cuánto trabajo manual diario es aceptable para Camila?
@@ -56,8 +44,8 @@ Estado: propuesta inicial en `docs/research/measurement.md`.
 
 ## Blocked
 
-- [Definir cambios, devoluciones y logística inversa](https://github.com/JonatanGarbuyo/camila-online/issues/8) — blocked by #6 y #7.
-- [Elegir plataforma del MVP](https://github.com/JonatanGarbuyo/camila-online/issues/9) — blocked by #3, #4, #5, #6, #7 y #8. Esta es la decisión final y requerirá aprobación explícita de `@JonatanGarbuyo`.
+- [Definir cambios, devoluciones y logística inversa](https://github.com/JonatanGarbuyo/camila-online/issues/8) — blocked by #6 y #7. El plan Inicial no ofrece logística reversa integrada, así que este ticket debe definir el flujo operativo real.
+- [Elegir plataforma del MVP](https://github.com/JonatanGarbuyo/camila-online/issues/9) — blocked by #6, #7 y #8. Esta es la decisión final y requerirá aprobación explícita de `@JonatanGarbuyo`.
 
 ## Not yet specified
 
