@@ -7,6 +7,7 @@ Esta carpeta conserva investigación verificable y fuentes externas. No es el ma
 ## Plataformas
 
 - [`shortlist-plataformas.md`](shortlist-plataformas.md) — shortlist activa: Tiendanube, DonWeb SitioSimple y Empretienda; criterios y prueba comparable.
+- [`donweb-sitiosimple.md`](donweb-sitiosimple.md) — evaluación específica de DonWeb: precio, pagos, envíos, SEO, permisos y modelo revendedor.
 - [`platforms-pricing-seo.md`](platforms-pricing-seo.md) — free tiers, precios, planes y capacidades SEO.
 - [`options.md`](options.md) — exploración inicial de alternativas y contexto histórico.
 
