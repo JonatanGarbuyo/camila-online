@@ -24,15 +24,7 @@ Desde ahí se reconstruyen reglas, contexto, Wayfinder, Issues e investigación 
 
 ## Objetivo
 
-Diseñar un MVP de e-commerce **no-code**, de bajo o nulo costo fijo, que cubra:
-
-- catálogo online;
-- links desde Facebook e Instagram;
-- pago online;
-- envíos nacionales y cobertura/seguro;
-- atención por WhatsApp;
-- SEO y buenas prácticas de publicación;
-- medición de adquisición, referidos y ventas.
+Diseñar un MVP de e-commerce **no-code**, de bajo o nulo costo fijo, que cubra catálogo online, links desde redes, pago online, envíos nacionales, atención por WhatsApp, SEO/publicación y medición.
 
 El primer caso es un comercio de ropa. El aprendizaje debe convertirse progresivamente en una guía reusable para otros comercios, sin construir prematuramente una plataforma/SaaS propia.
 
@@ -45,11 +37,12 @@ El primer caso es un comercio de ropa. El aprendizaje debe convertirse progresiv
 
 ## Estado de plataforma
 
-**La plataforma final todavía no está decidida.** La shortlist activa es:
+**La plataforma final todavía no está decidida.** La shortlist activa quedó reducida a:
 
-1. Tiendanube
-2. DonWeb SitioSimple
-3. Empretienda
+1. **Tiendanube**
+2. **DonWeb SitioSimple**
+
+**Empretienda fue descartada en esta etapa** frente a esas dos por menor documentación pública, dependencia de medios de pago externos y menor claridad operativa/accesos. Puede reabrirse solo si ambas finalistas fallan por una restricción concreta.
 
 Las cuentas de prueba se crearán y operarán manualmente por Camila o Jonatan. La decisión final vive en el issue #9 y requiere aprobación explícita de `@JonatanGarbuyo`.
 
