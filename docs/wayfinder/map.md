@@ -10,6 +10,8 @@ El resultado de este mapa es **decisión y especificación, no implementación p
 
 - Primer caso real: negocio existente de **ropa**.
 - El MVP será **no-code**; no desarrollar software propio mientras una solución administrada cubra razonablemente el problema.
+- Camila será la **responsable operativa** y administrará la tienda online.
+- Jonatan aporta tecnología/desarrollo; los procesos del negocio que no conoce deben relevarse con Camila, no inferirse.
 - La venta principal será **autoservicio end-to-end**; WhatsApp será asistencia, no el checkout principal.
 - La atención de WhatsApp será humana en el MVP.
 - El catálogo/stock puede comenzar con administración manual; no se busca sincronización compleja inicialmente.
@@ -19,6 +21,7 @@ El resultado de este mapa es **decisión y especificación, no implementación p
 - Nice to have: catálogo/shop en WhatsApp, métricas, observabilidad y atribución de links/referidos.
 - Posible oportunidad futura: ofrecer el mismo servicio a otros comercios. No diseñar ahora un SaaS/plataforma genérica; separar aprendizaje reusable de restricciones específicas de indumentaria.
 - Investigación con fuentes primarias y condiciones vigentes para Argentina.
+- Los tickets #6 y #7 quedan preparados como handoff para que Camila los resuelva desde su chat dentro del Project.
 
 ## Decisions so far
 
@@ -39,13 +42,18 @@ El resultado de este mapa es **decisión y especificación, no implementación p
 ### Grilling — [Definir operación diaria de catálogo, stock y despacho](https://github.com/JonatanGarbuyo/camila-online/issues/6)
 **Question:** ¿Cómo se administran hoy productos, precios y stock; con qué frecuencia cambian; quién prepara/despacha pedidos; y cuánto trabajo manual diario es aceptable para Camila?
 
+Estado: **handoff a Camila**. El issue contiene las preguntas concretas para su próximo chat.
+
 ### Grilling — [Definir catálogo, variantes y política de stock](https://github.com/JonatanGarbuyo/camila-online/issues/7)
 **Question:** ¿Cuántos productos/SKUs y variantes maneja el negocio, cómo se representan talles y colores, y qué política debe aplicarse ante stock bajo o agotado?
+
+Estado: **handoff a Camila**. El issue contiene las preguntas concretas para su próximo chat.
 
 ## Blocked
 
 - [Definir cambios, devoluciones y logística inversa](https://github.com/JonatanGarbuyo/camila-online/issues/8) — blocked by #6 y #7. El plan Inicial no ofrece logística reversa integrada, así que este ticket debe definir el flujo operativo real.
-- [Elegir plataforma del MVP](https://github.com/JonatanGarbuyo/camila-online/issues/9) — blocked by #6, #7 y #8. Esta es la decisión final y requerirá aprobación explícita de `@JonatanGarbuyo`.
+- [Elegir plataforma del MVP](https://github.com/JonatanGarbuyo/camila-online/issues/9) — blocked by #6, #7 y #8. Esta es la decisión final de plataforma y requerirá aprobación explícita de `@JonatanGarbuyo`.
+- [Definir modelo comercial del servicio de administración](https://github.com/JonatanGarbuyo/camila-online/issues/10) — blocked by #6 y #9. Hipótesis a evaluar: el comercio paga los costos directos de plataforma; Camila puede cobrar un fee pequeño de administración y eventualmente una comisión por ventas online. Valores y estructura requieren aprobación de `@JonatanGarbuyo`.
 
 ## Not yet specified
 
