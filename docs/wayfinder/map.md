@@ -34,7 +34,7 @@ El resultado de este mapa es **decisión y especificación, no implementación p
 - **Fuera de evaluación activa:** Shopify, Wix, Odoo y otras alternativas; solo reabrirlas si las tres finalistas quedan bloqueadas por una restricción concreta.
 - **Tiendanube Inicial:** $0 de costo fijo y flujo local muy integrado; restricciones relevantes en carga/exportación masiva, dominio, medios de pago/envío y permisos granulares.
 - **Tiendanube Esencial no incluye el dominio:** habilita a conectar uno propio, que se compra/renueva aparte.
-- **DonWeb SitioSimple:** research documental confirma pagos/envíos locales, carga masiva, dominio, SEO y usuarios con permisos diferenciados. Su modalidad Revendedores/Partners puede facilitar un servicio futuro para varios comercios. Research: `docs/research/donweb-sitiosimple.md`.
+- **DonWeb SitioSimple:** #17 confirmó que merece estar en la shortlist. Documenta pagos/envíos locales, carga masiva, dominio, SEO y usuarios con permisos diferenciados. Su modalidad Revendedores/Partners puede facilitar un servicio futuro para varios comercios. Research: `docs/research/donweb-sitiosimple.md`.
 - **Riesgo DonWeb:** comprobar en práctica que la libertad de integrar Mercado Pago/Andreani/OCA/Envia.com no fragmente el día a día entre demasiados paneles.
 - **Empretienda:** un único plan simple con muchas funciones locales; falta verificar especialmente acceso multiusuario/permisos para que Camila no tenga que compartir credenciales con el comercio.
 - **Pagos:** Pago Nube cubre tarjeta/débito/MODO + transferencia en Tiendanube Inicial.
@@ -58,13 +58,13 @@ Estado: **handoff a Camila**.
 ### Grilling — #13 Confirmar titularidad, facturación y accesos con Camila
 Estado: **handoff a Camila**.
 
-### Research / validación práctica — #17 Evaluar DonWeb SitioSimple
-Research documental completado. Falta validar en prueba real facilidad para operador no técnico, checkout, pagos, envíos, analytics, portabilidad, reintegros y administración de pedidos.
+### Prototype — #19 Probar en práctica Tiendanube, DonWeb y Empretienda
+Ejecutar el mismo mini-store/recorrido en las tres finalistas usando datos ficticios y sin generar cargos innecesarios. Medir facilidad operativa, catálogo/stock, pago/reintegro, envío/seguimiento, SEO, analytics, permisos, portabilidad y checkout móvil.
 
 ## Blocked
 
 - #8 — Cambios, devoluciones y logística inversa — blocked by #6 y #7.
-- #9 — Elegir plataforma del MVP — blocked by #6, #7, #8, #13 y #17. **Todavía no decidida**. La decisión debe limitarse a Tiendanube, DonWeb o Empretienda salvo evidencia nueva. Requiere aprobación explícita de `@JonatanGarbuyo`.
+- #9 — Elegir plataforma del MVP — blocked by #6, #7, #8, #13 y #19. **Todavía no decidida**. La decisión debe limitarse a Tiendanube, DonWeb o Empretienda salvo evidencia nueva. Requiere aprobación explícita de `@JonatanGarbuyo`.
 - #10 — Modelo comercial del servicio — blocked by #6 y #9.
 - #15 — Completar playbook operativo — blocked by #6, #7, #8, #9 y #13.
 
@@ -78,6 +78,7 @@ Research documental completado. Falta validar en prueba real facilidad para oper
 - #12 — Facturación y titularidad.
 - #14 — WhatsApp Business y redes.
 - #16 — Free tiers, planes y SEO.
+- #17 — DonWeb SitioSimple: confirmado como finalista; la prueba práctica pasó a #19.
 - #18 — Publicar playbook en GitHub Wiki — cerrado como `not planned`; se usa Markdown navegable mediante `docs/INDEX.md`.
 
 ## Not yet specified
