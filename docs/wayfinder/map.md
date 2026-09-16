@@ -2,64 +2,50 @@
 
 ## Destination
 
-Llegar a una especificación de MVP y un plan de lanzamiento claros para que Camila pueda crear y administrar una tienda online en Argentina con catálogo, checkout/pago online, logística, WhatsApp, SEO/publicación y medición.
+Llegar a una especificación de MVP y un plan de lanzamiento suficientemente claros para que Camila pueda crear y administrar una tienda online en Argentina, vendiendo a todo el país con catálogo, checkout/pago online, logística, WhatsApp, SEO/publicación y medición.
 
-Este mapa es interno al proyecto: **no forma parte de la guía para operadores no técnicos**.
+El resultado de este mapa es **decisión y especificación, no implementación productiva**.
 
-## Separación de documentación
+## Notes
 
-- `docs/INDEX.md`: portada simple para Camila/operadores. Solo procedimientos y conocimiento práctico.
-- `docs/playbook/`: manual operativo reusable.
-- `docs/research/`: investigación y evidencia interna.
-- `docs/wayfinder/` + Issues: decisiones, estado, bloqueos y discovery.
-
-No agregar Wayfinder, Issues ni research interno al índice operativo.
-
-## Decisiones / research vigente
-
+- Primer caso real: negocio existente de ropa.
 - MVP no-code.
-- Venta autoservicio principal; WhatsApp como asistencia humana.
-- Catálogo inicialmente administrable de forma manual.
-- Dominio propio nice-to-have.
+- Camila será la responsable operativa.
+- Venta principal autoservicio; WhatsApp como asistencia humana.
+- Catálogo/stock puede comenzar manual.
+- Dominio propio es nice-to-have.
+- `/wiki/` es la guía operativa para personas no técnicas.
+- `docs/` queda para research, Wayfinder y documentación interna.
+- #6, #7 y #13 son handoff a Camila.
+
+## Decisions / research so far
+
 - Shortlist activa: **Tiendanube, DonWeb SitioSimple y Empretienda**.
-- La plataforma final todavía no está decidida.
-- Tiendanube Inicial: costo fijo $0 y flujo local muy integrado; restricciones en dominio, carga masiva, proveedores y permisos.
-- DonWeb: costo bajo, permisos diferenciados y potencial futuro multi-comercio; principal riesgo = fragmentación operativa.
-- Empretienda: opción local simple; pendiente verificar acceso delegado/multiusuario.
-- Fragmentación de **pagos** puede ser aceptable si el comercio ya usa Mercado Pago y quiere conservarlo.
-- Fragmentación de **envíos** pesa negativamente si obliga a operar habitualmente otro panel para etiquetas, despacho o tracking.
-- Las cuentas de prueba de plataformas se crean y operan manualmente por Camila o Jonatan.
+- Tiendanube Inicial: $0 y flujo local integrado; restricciones de dominio, carga masiva, proveedores y permisos.
+- DonWeb: costo bajo, permisos diferenciados y potencial multi-comercio; hay que validar fragmentación operativa.
+- Empretienda: opción local simple; falta validar acceso delegado/multiusuario.
+- **Fragmentación de pagos:** evaluar si Camila y el comercio aceptan que cobros, conciliación, devoluciones o reintegros se operen parcialmente en un panel separado del panel principal de la tienda. El criterio es independiente del proveedor de pago.
+- **Fragmentación de envíos:** pesa negativamente si la operación normal obliga a usar habitualmente otro panel para generar etiquetas, despachar o seguir pedidos.
+- Las pruebas de cuentas/plataformas las ejecutarán manualmente Camila o Jonatan.
 
 ## Frontier
 
-### #6 — operación diaria, stock, despacho y fragmentación
-
-Handoff a Camila. Relevar además:
-
-- si el comercio ya usa Mercado Pago;
-- si desea conservar esa cuenta;
-- si Camila acepta operar pagos en un panel externo;
-- cuánta fragmentación tolera;
-- si para envíos acepta o no un panel externo cotidiano.
-
-### #7 — catálogo, variantes y política de stock
-
-Handoff a Camila.
-
-### #13 — titularidad, facturación y accesos
-
-Handoff a Camila.
-
-### #19 — prueba manual Tiendanube / DonWeb / Empretienda
-
-Camila o Jonatan ejecutan manualmente `docs/research/protocolo-prueba-plataformas.md` usando datos ficticios.
+- #6 — operación diaria, stock, despacho y tolerancia a fragmentación — responder con Camila.
+- #7 — catálogo, variantes y política de stock — responder con Camila.
+- #13 — titularidad, facturación y accesos — responder con Camila.
+- #19 — prueba manual comparable de Tiendanube, DonWeb y Empretienda.
 
 ## Blocked
 
-- #8 — cambios, devoluciones y logística inversa — depende de #6 y #7.
-- #9 — elegir plataforma del MVP — depende de #6, #7, #8, #13 y #19. Requiere aprobación explícita de `@JonatanGarbuyo`.
-- #10 — modelo comercial del servicio — depende de #6 y #9.
-- #15 — completar playbook operativo — depende de operación y plataforma elegida.
+- #8 — cambios, devoluciones y logística inversa — blocked by #6 y #7.
+- #9 — elegir plataforma del MVP — blocked by #6, #7, #8, #13 y #19; requiere aprobación explícita de `@JonatanGarbuyo`.
+- #10 — modelo comercial del servicio — blocked by #6 y #9.
+- #15 — completar wiki operativa — depende de operación/plataforma.
+
+## Closed research / tasks
+
+- #2, #3, #4, #5, #11, #12, #14, #16, #17 cerrados.
+- #18 GitHub Wiki diferida; se usa `/wiki/` dentro del repo.
 
 ## Out of scope
 
