@@ -13,6 +13,7 @@ El repositorio sigue siendo la fuente canónica. Este índice solo organiza enla
 | Entender el objetivo y las reglas del proyecto | [`../START-HERE.md`](../START-HERE.md) · [`../PROJECT-RULES.md`](../PROJECT-RULES.md) · [`../CONTEXT.md`](../CONTEXT.md) |
 | Ver qué está decidido y qué falta | [`wayfinder/map.md`](wayfinder/map.md) · [Issue #1](https://github.com/JonatanGarbuyo/camila-online/issues/1) |
 | Comparar las tres plataformas finalistas | [`research/shortlist-plataformas.md`](research/shortlist-plataformas.md) |
+| Ver la evaluación específica de DonWeb | [`research/donweb-sitiosimple.md`](research/donweb-sitiosimple.md) |
 | Ver precios, free tiers y SEO investigado | [`research/platforms-pricing-seo.md`](research/platforms-pricing-seo.md) |
 | Aprender a levantar y administrar la tienda | [`playbook/README.md`](playbook/README.md) |
 | Publicar productos/contenido correctamente | [`playbook/04-seo-y-publicacion.md`](playbook/04-seo-y-publicacion.md) |
@@ -45,6 +46,7 @@ La decisión final vive en el [Issue #9](https://github.com/JonatanGarbuyo/camil
 - [#9 — elegir plataforma del MVP](https://github.com/JonatanGarbuyo/camila-online/issues/9)
 - [#10 — modelo comercial del servicio de administración](https://github.com/JonatanGarbuyo/camila-online/issues/10)
 - [#15 — completar playbook operativo](https://github.com/JonatanGarbuyo/camila-online/issues/15)
+- [#17 — validar DonWeb SitioSimple en práctica](https://github.com/JonatanGarbuyo/camila-online/issues/17)
 
 ## Manual operativo / Playbook
 
@@ -69,15 +71,22 @@ Estado actual:
 
 Índice temático: [`research/README.md`](research/README.md)
 
-Documentos actuales:
+### Plataformas
 
-- [`research/shortlist-plataformas.md`](research/shortlist-plataformas.md) — comparación y prueba de las tres finalistas.
+- [`research/shortlist-plataformas.md`](research/shortlist-plataformas.md) — matriz, condiciones de descarte y prueba de las tres finalistas.
+- [`research/donweb-sitiosimple.md`](research/donweb-sitiosimple.md) — evaluación de DonWeb: costo, pagos, envíos, permisos y modelo revendedor.
 - [`research/platforms-pricing-seo.md`](research/platforms-pricing-seo.md) — precios, free tiers y SEO de plataformas evaluadas.
-- [`research/options.md`](research/options.md) — investigación inicial de opciones.
+- [`research/options.md`](research/options.md) — investigación inicial e historial de alternativas.
+
+### Operación, adquisición y medición
+
 - [`research/payments.md`](research/payments.md) — medios de pago y costo efectivo.
 - [`research/shipping-insurance.md`](research/shipping-insurance.md) — logística nacional y seguro.
 - [`research/measurement.md`](research/measurement.md) — GA4, Meta, UTMs, KPIs y observabilidad de negocio.
 - [`research/social-whatsapp.md`](research/social-whatsapp.md) — WhatsApp Business y canales sociales.
+
+### Legal y fiscal
+
 - [`research/legal-consumer.md`](research/legal-consumer.md) — arrepentimiento y obligaciones de consumo.
 - [`research/fiscal-invoicing.md`](research/fiscal-invoicing.md) — facturación y titularidad del canal.
 
