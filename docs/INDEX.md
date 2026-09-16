@@ -40,13 +40,16 @@ La decisión final vive en el [Issue #9](https://github.com/JonatanGarbuyo/camil
 - [#7 — catálogo, variantes y política de stock](https://github.com/JonatanGarbuyo/camila-online/issues/7)
 - [#13 — titularidad, facturación y accesos](https://github.com/JonatanGarbuyo/camila-online/issues/13)
 
+### Trabajo activo para decidir plataforma
+
+- [#19 — prueba práctica comparable de Tiendanube, DonWeb y Empretienda](https://github.com/JonatanGarbuyo/camila-online/issues/19)
+
 ### Decisiones/trabajo que dependen de eso
 
 - [#8 — cambios, devoluciones y logística inversa](https://github.com/JonatanGarbuyo/camila-online/issues/8)
 - [#9 — elegir plataforma del MVP](https://github.com/JonatanGarbuyo/camila-online/issues/9)
 - [#10 — modelo comercial del servicio de administración](https://github.com/JonatanGarbuyo/camila-online/issues/10)
 - [#15 — completar playbook operativo](https://github.com/JonatanGarbuyo/camila-online/issues/15)
-- [#17 — validar DonWeb SitioSimple en práctica](https://github.com/JonatanGarbuyo/camila-online/issues/17)
 
 ## Manual operativo / Playbook
 
