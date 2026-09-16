@@ -4,6 +4,17 @@ Repositorio de discovery, decisiones, investigación y documentación operativa 
 
 Este repositorio funciona como **base de conocimiento persistente del proyecto**: los chats son temporales; las decisiones, investigaciones, dudas abiertas, playbooks y contexto que deban sobrevivir entre conversaciones deben quedar documentados acá.
 
+## Navegación
+
+👉 **[Índice general de documentación](docs/INDEX.md)** — usarlo como una wiki navegable en Markdown.
+
+Otros accesos rápidos:
+
+- [START-HERE](START-HERE.md) — punto de entrada para chats nuevos.
+- [Mapa Wayfinder](docs/wayfinder/map.md) — estado, decisiones, bloqueos y frontera.
+- [Shortlist de plataformas](docs/research/shortlist-plataformas.md) — Tiendanube vs DonWeb vs Empretienda.
+- [Playbook operativo](docs/playbook/README.md) — manual para levantar y administrar tiendas.
+
 ## Continue from here
 
 Para cualquier chat nuevo, empezar por [`START-HERE.md`](START-HERE.md).
@@ -38,22 +49,25 @@ Usamos GitHub para tres tipos de conocimiento durable:
 2. **`docs/research/`:** hechos verificados, comparaciones y fuentes externas.
 3. **`docs/playbook/`:** manual operativo para levantar, lanzar y administrar tiendas.
 
-No hace falta otra base de conocimiento por ahora. Si más adelante Camila necesita una interfaz de manual más visual, se puede publicar/replicar el playbook en otra herramienta, pero GitHub debe seguir siendo la fuente canónica para evitar versiones contradictorias.
+No hace falta otra base de conocimiento por ahora. La navegación principal se resuelve con [`docs/INDEX.md`](docs/INDEX.md) e índices temáticos en Markdown.
 
 ## Estado de plataforma
 
-**La plataforma final todavía no está decidida.**
+**La plataforma final todavía no está decidida.** La shortlist activa quedó reducida a:
 
-- Tiendanube Inicial es la baseline a validar por su costo fijo $0 y su encaje local en Argentina.
-- Empretienda es el fallback pago de bajo costo.
-- Odoo One App Free quedó registrado como alternativa gratuita secundaria con mayor complejidad.
-- La decisión final vive en el issue #9 y requiere aprobación explícita de `@JonatanGarbuyo`.
+1. **Tiendanube** — baseline por costo fijo $0 en el plan Inicial y buen encaje local.
+2. **DonWeb SitioSimple** — challenger local de costo fijo muy bajo; requiere validación práctica.
+3. **Empretienda** — alternativa local simple y de bajo costo fijo.
+
+Shopify, Wix, Odoo y otras opciones quedan fuera de la evaluación activa salvo que una restricción concreta invalide las tres finalistas.
+
+La decisión final vive en el issue #9 y requiere aprobación explícita de `@JonatanGarbuyo`.
 
 Ver:
 
-- [Mapa Wayfinder](docs/wayfinder/map.md)
-- [Comparación de plataformas, precios y SEO](docs/research/platforms-pricing-seo.md)
-- [Skeleton del playbook operativo](docs/playbook/README.md)
+- [Shortlist y prueba comparable](docs/research/shortlist-plataformas.md)
+- [Comparación ampliada de precios y SEO](docs/research/platforms-pricing-seo.md)
+- [Playbook operativo](docs/playbook/README.md)
 
 ## Principio de trabajo
 
@@ -66,8 +80,8 @@ Primero resolvemos decisiones e investigamos restricciones con Wayfinder. No se 
 Leer primero:
 
 1. [START-HERE](START-HERE.md)
-2. [Reglas del proyecto](PROJECT-RULES.md)
-3. [Bootstrap para chats](docs/CHAT-BOOTSTRAP.md)
+2. [Índice general](docs/INDEX.md)
+3. [Reglas del proyecto](PROJECT-RULES.md)
 4. [Contexto y vocabulario](CONTEXT.md)
 5. [Mapa Wayfinder](docs/wayfinder/map.md)
 6. Issues Wayfinder abiertos relevantes
