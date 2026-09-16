@@ -1,105 +1,119 @@
 # Shortlist de plataformas para el MVP
 
-_Estado: tres finalistas para prueba manual. No es la decisión final._
+_Estado: shortlist acordada para evaluación. No es todavía la decisión final de plataforma._
 
-## Finalistas
+_Verificado documentalmente: 2026-09-16. La prueba práctica todavía está pendiente._
+
+## Plataformas activas
 
 1. **Tiendanube**
 2. **DonWeb SitioSimple**
 3. **Empretienda**
 
-La comparación debe premiar la **menor complejidad suficiente** para que Camila administre la tienda correctamente, no la plataforma con más funciones.
+Shopify, Wix, Odoo y otras alternativas quedan fuera de la evaluación activa salvo que aparezca una restricción nueva que invalide las tres opciones anteriores.
 
-## Matriz resumida
+## Objetivo
 
-| Tema | Tiendanube Inicial | DonWeb SitioSimple | Empretienda |
-| --- | --- | --- | --- |
-| Costo fijo publicado | $0 | ~$3.900/mes equivalente en anual | $10.490/mes |
-| Pago | Pago Nube integrado | Mercado Pago / Mobbex / otros | Mercado Pago / Ualá / otros |
-| Envíos | Andreani/Envío Nube muy integrado | Andreani, OCA, Envia.com y otros | Varias opciones locales |
-| Dominio propio | No en Inicial | Sí | Sí |
-| Carga masiva | No en Inicial | Sí | Sí |
-| Accesos | Varios usuarios, todos con acceso total en Inicial | Usuarios con permisos por secciones | Pendiente de verificar acceso delegado |
-| SEO/publicación | Bueno | Bueno | Bueno sobre papel; validar controles finos |
-| Principal ventaja | Costo $0 + operación centralizada | Bajo costo + flexibilidad + permisos | Simplicidad local en un único plan |
-| Principal riesgo | Restricciones del plan gratis | Fragmentación entre paneles externos | Accesos/permisos y profundidad de integraciones |
+Elegir la plataforma más simple para que Camila pueda administrar la tienda con baja carga operativa, buen encaje con Argentina y costo total razonable.
 
-## Regla clave: no toda fragmentación pesa igual
+## Regla de fragmentación
 
-### Fragmentación de pagos
+La fragmentación se evalúa por **tipo de tarea**, no por proveedor.
 
-Puede ser **aceptable** operar Mercado Pago por separado cuando:
+### Pagos
 
-- el comercio ya tiene cuenta de Mercado Pago;
-- desea conservar esa misma cuenta;
-- Camila considera razonable entrar allí para conciliación, reintegros o incidencias;
-- la tienda recibe correctamente el estado del pedido/pago y no exige conciliación manual riesgosa.
+Puede ser aceptable que cobros, conciliación, devoluciones o reintegros se operen en un panel de pago separado del panel principal de la tienda **si Camila y el comercio consideran razonable ese flujo**.
 
-Por lo tanto, que DonWeb use Mercado Pago externo **no es por sí solo motivo de descarte**.
+No importa si el proveedor es Mercado Pago, Pago Nube, Mobbex, Ualá u otro: lo que se evalúa es la carga operativa de cambiar de sistema y mantener trazabilidad.
 
-### Fragmentación de envíos
+### Envíos
 
-Es una **desventaja fuerte** si para cada pedido Camila debe entrar habitualmente a otro panel para:
+Es una desventaja fuerte que la operación normal obligue a entrar habitualmente en otro panel para:
 
 - generar o pagar etiquetas;
-- preparar el despacho;
-- obtener tracking;
-- actualizar estados;
+- preparar despachos;
+- consultar tracking;
+- cancelar envíos;
 - resolver incidencias.
 
-Preferimos que el flujo `pedido → etiqueta → despacho → seguimiento` quede dentro de la tienda o sea muy directo.
+Preferir logística integrada o un flujo externo tan directo que no agregue trabajo cotidiano relevante.
 
-Esta diferencia debe ponderarse más que la simple cantidad de proveedores de envío disponibles.
-
-## Cómo puede inclinarse la decisión
-
-### DonWeb gana peso si…
-
-- el comercio ya usa Mercado Pago y quiere conservarlo;
-- Camila acepta esa separación para pagos;
-- el flujo de envíos resulta integrado/directo en la prueba;
-- los permisos separados comercio/Camila funcionan bien;
-- la operación diaria sigue siendo simple pese a usar proveedores externos.
-
-### Tiendanube gana peso si…
-
-- Camila valora fuertemente operar pagos, pedidos y logística desde un mismo ecosistema;
-- Andreani sirve para el comercio;
-- el catálogo inicial puede mantenerse manualmente;
-- no hace falta dominio propio al lanzamiento;
-- los dueños aceptan el esquema de accesos del plan Inicial.
-
-### Empretienda gana peso si…
-
-- su panel resulta el más simple para Camila;
-- confirma acceso separado legítimo para administradora y comercio;
-- pagos y envíos quedan suficientemente centralizados;
-- la diferencia de costo fijo se compensa con menos carga operativa.
-
-## Condiciones de descarte
+## Lectura preliminar
 
 ### Tiendanube Inicial
 
-Deja de ser suficiente si la carga manual de catálogo/stock es inviable, Andreani no sirve, Pago Nube no encaja, los accesos totales no son aceptables o el upgrade necesario hace perder su ventaja económica.
+Fortalezas:
 
-### DonWeb
+- costo fijo $0;
+- pago y logística muy integrados;
+- operación local orientada a Argentina.
 
-Deja de ser suficiente si el flujo normal obliga a alternar continuamente entre tienda, pago y logística, especialmente si **envíos** requieren operación cotidiana en un segundo panel.
+Restricciones:
+
+- sin dominio propio en Inicial;
+- sin carga/exportación masiva;
+- Pago Nube como pago integrado;
+- Andreani/Envío Nube como logística integrada;
+- usuarios adicionales con acceso total.
+
+### DonWeb SitioSimple
+
+Fortalezas:
+
+- costo fijo muy bajo;
+- dominio propio;
+- carga/edición masiva;
+- varios medios de pago y envío;
+- usuarios con permisos diferenciados;
+- modelo futuro de revendedores/partners.
+
+Riesgo principal:
+
+- validar que pagos y, especialmente, envíos no fragmenten demasiado la operación diaria.
 
 ### Empretienda
 
-Deja de ser suficiente si obliga a compartir contraseña, si no ofrece acceso delegado adecuado o si pagos/envíos requieren más trabajo manual del esperado.
+Fortalezas:
 
-## Prueba manual
+- un único plan local simple;
+- carga masiva;
+- varios pagos/envíos;
+- dominio propio;
+- Analytics/Pixel/Shopping publicados.
 
-Camila o Jonatan crearán manualmente las cuentas de prueba y usarán:
+Pendiente crítico:
 
-[`protocolo-prueba-plataformas.md`](protocolo-prueba-plataformas.md)
+- verificar acceso delegado/multiusuario seguro sin compartir contraseña.
 
-No automatizar altas ni guardar credenciales reales en el repo.
+## Condiciones de descarte
 
-## Resultado esperado
+### Tiendanube Inicial deja de ser suficiente si…
 
-La decisión final debe poder explicarse con restricciones concretas observadas durante la prueba y con las respuestas de Camila sobre operación diaria y tolerancia a fragmentación.
+- el catálogo hace inviable la carga manual;
+- se necesita dominio propio desde el inicio;
+- Pago Nube o Andreani no sirven para la operación real;
+- se necesitan exportaciones/acciones masivas frecuentes;
+- los dueños no aceptan acceso total para Camila.
 
-La aprobación final de plataforma corresponde a `@JonatanGarbuyo`.
+### DonWeb deja de ser suficiente si…
+
+- el panel resulta confuso para Camila;
+- la fragmentación de pagos supera lo que Camila/comercio consideran razonable;
+- la logística obliga habitualmente a operar otro panel para etiquetas, despacho o tracking;
+- analytics/atribución son insuficientes;
+- el checkout móvil tiene fricción material.
+
+### Empretienda deja de ser suficiente si…
+
+- no permite accesos separados y seguros;
+- obliga a compartir contraseña;
+- la fragmentación de pagos o envíos resulta operativamente incómoda;
+- SEO, portabilidad o reporting no alcanzan el procedimiento requerido.
+
+## Prueba práctica
+
+Las cuentas y pruebas se ejecutarán manualmente por Camila o Jonatan siguiendo `docs/research/protocolo-prueba-plataformas.md`.
+
+No usar credenciales, cuentas sensibles ni medios de pago reales en GitHub.
+
+La decisión final vive en el issue #9 y requiere aprobación explícita de `@JonatanGarbuyo`.
