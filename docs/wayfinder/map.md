@@ -20,10 +20,10 @@ El resultado de este mapa es **decisión y especificación, no implementación p
 
 ## Decisions / research so far
 
-- Shortlist activa: **Tiendanube, DonWeb SitioSimple y Empretienda**.
+- Shortlist activa: **Tiendanube y DonWeb SitioSimple**.
+- **Empretienda descartada en esta etapa** por menor documentación pública, dependencia de medios de pago de terceros y menor claridad sobre accesos/permisos y operación frente a las otras dos. No se descarta por imposibilidad de cobrar: soporta proveedores externos.
 - Tiendanube Inicial: $0 y flujo local integrado; restricciones de dominio, carga masiva, proveedores y permisos.
 - DonWeb: costo bajo, permisos diferenciados y potencial multi-comercio; hay que validar fragmentación operativa.
-- Empretienda: opción local simple; falta validar acceso delegado/multiusuario.
 - **Fragmentación de pagos:** evaluar si Camila y el comercio aceptan que cobros, conciliación, devoluciones o reintegros se operen parcialmente en un panel separado del panel principal de la tienda. El criterio es independiente del proveedor de pago.
 - **Fragmentación de envíos:** pesa negativamente si la operación normal obliga a usar habitualmente otro panel para generar etiquetas, despachar o seguir pedidos.
 - Las pruebas de cuentas/plataformas las ejecutarán manualmente Camila o Jonatan.
@@ -33,7 +33,7 @@ El resultado de este mapa es **decisión y especificación, no implementación p
 - #6 — operación diaria, stock, despacho y tolerancia a fragmentación — responder con Camila.
 - #7 — catálogo, variantes y política de stock — responder con Camila.
 - #13 — titularidad, facturación y accesos — responder con Camila.
-- #19 — prueba manual comparable de Tiendanube, DonWeb y Empretienda.
+- #19 — prueba manual comparable de Tiendanube y DonWeb.
 
 ## Blocked
 
