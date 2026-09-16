@@ -1,6 +1,6 @@
 # DonWeb SitioSimple — evaluación para el MVP
 
-[← Volver al índice de investigación](README.md) · [Comparar finalistas](shortlist-plataformas.md) · [Índice general](../INDEX.md)
+[← Índice de investigación](README.md) · [Shortlist](shortlist-plataformas.md) · [Protocolo #19](protocolo-prueba-plataformas.md) · [Índice general](../INDEX.md)
 
 _Verificado: 2026-09-16._
 
@@ -8,15 +8,15 @@ _Verificado: 2026-09-16._
 
 **Candidato activo, no decisión final.**
 
-SitioSimple entró en la shortlist porque combina costo fijo muy bajo, funciones locales para Argentina, administración no-code y capacidades interesantes para un futuro servicio administrado por Camila.
+El research #17 confirmó que SitioSimple merece entrar en la shortlist. La prueba práctica comparable de las tres finalistas continúa en #19.
 
-La prueba práctica del panel/checkout sigue pendiente en el issue #17.
+SitioSimple combina costo fijo muy bajo, funciones locales para Argentina, administración no-code y capacidades interesantes para un futuro servicio administrado por Camila. Su principal riesgo es que parte del flujo operativo dependa de cuentas externas de pago/logística y termine más fragmentado que Tiendanube.
 
 ## Precio y prueba
 
 Oferta publicada para Argentina:
 
-- prueba completa: **15 días gratis**, sin tarjeta;
+- prueba completa: **15 días gratis**, sin tarjeta según la página comercial;
 - Página Web + Tienda: **$3.900 ARS/mes equivalentes** contratando anual;
 - total anual publicado: **$46.800 ARS**, IVA incluido;
 - DonWeb no cobra comisión sobre ventas; el proveedor de pago sí puede cobrar su propia comisión.
@@ -39,7 +39,7 @@ El plan de tienda incluye:
 Un `.com` o `.com.ar` no debe considerarse incluido: se puede contratar aparte o conectar uno existente.
 
 Fuente:
-- https://donweb.com/es-ar/crear-sitio-web
+- https://soporte.donweb.com/hc/es/articles/18691183839380-Conectar-mi-dominio-en-SitioSimple
 
 ## Catálogo y operación
 
@@ -48,17 +48,15 @@ La oferta/documentación pública incluye:
 - catálogo de productos;
 - gestión de stock, clientes y pedidos;
 - promociones y cupones;
-- importación/carga masiva;
-- edición de precios con Excel;
+- actualización de precios con Excel;
 - blog;
 - editor drag-and-drop;
 - soporte 24/7.
 
-Esto elimina varias restricciones presentes en Tiendanube Inicial, particularmente la falta de operaciones/carga masiva.
+La profundidad exacta de variantes talle/color, stock por combinación, SKU por variante y exportación/importación completa del catálogo se verificará en #19 sobre la versión actual.
 
-Fuentes:
+Fuente:
 - https://donweb.com/es-ar/crear-tienda-online
-- https://soporte.donweb.com/hc/es/categories/18510452893844-SitioSimple
 
 ## Pagos
 
@@ -72,9 +70,15 @@ Métodos documentados para Tienda Online:
 - a convenir;
 - método propio.
 
-Mercado Pago requiere conectar una cuenta del comercio y configurar sus credenciales en SitioSimple. El checkout deriva al comprador a Mercado Pago y luego vuelve a la tienda.
+Mercado Pago requiere conectar una cuenta del comercio y configurar sus credenciales en SitioSimple. El checkout documentado deriva al comprador a Mercado Pago y luego vuelve a la tienda.
 
-Implicación operativa: hay más libertad que en Tiendanube Inicial, pero también más configuración de terceros y gestión de credenciales durante el alta.
+Esto da libertad, pero la prueba debe medir:
+
+- actualización automática del estado de orden;
+- conciliación;
+- cancelación/reintegro;
+- si el reintegro se realiza en Mercado Pago y luego requiere reflejo manual en SitioSimple;
+- cantidad de paneles que Camila debe usar por venta.
 
 Fuentes:
 - https://soporte.donweb.com/hc/es/articles/18546609299476-M%C3%A9todos-de-pago-disponibles-en-SitioSimple
@@ -91,42 +95,70 @@ Métodos documentados:
 - a convenir;
 - método propio.
 
-Con Andreani y OCA se requiere cuenta con el operador. SitioSimple puede cotizar el envío y agregarlo a la orden.
+Con Andreani y OCA se puede conectar una cuenta existente del operador. SitioSimple cotiza el envío y agrega su importe a la orden.
 
-Envia.com permite mostrar tarifas/opciones de múltiples operadores —incluyendo OCA, Andreani, Correo Argentino, FedEx y DHL según configuración— pero la gestión/realización del envío ocurre desde la cuenta de Envia.com.
+Con Envia.com, SitioSimple configura tarifas/opciones para checkout, pero la **gestión y realización efectiva de los envíos ocurre en la cuenta de Envia.com**. Puede ofrecer operadores como OCA, Andreani, Correo Argentino, FedEx y DHL según configuración.
 
-Esto da más opciones logísticas que Tiendanube Inicial, a cambio de tener potencialmente una cuenta/panel externo adicional.
+Esta flexibilidad confirma a la vez el principal riesgo operativo: más paneles externos.
 
 Fuentes:
 - https://soporte.donweb.com/hc/es/articles/18547495468436-M%C3%A9todos-de-env%C3%ADo-disponibles-en-SitioSimple
 - https://soporte.donweb.com/hc/es/articles/18577117357844-Configurar-env%C3%ADo-con-Andreani
+- https://soporte.donweb.com/hc/es/articles/18574569952404-Configurar-env%C3%ADo-con-OCA
 - https://soporte.donweb.com/hc/es/articles/18580260215828-Configurar-Envia-com
+
+## Pedidos y clientes
+
+El panel de SitioSimple documenta una lista de ventas donde se puede:
+
+- ver número de orden y comprador;
+- consultar productos;
+- modificar el estado de la venta;
+- verificar el método de pago;
+- conocer la situación del envío;
+- ver datos de facturación;
+- descargar una factura PDF generada por SitioSimple.
+
+También se puede consultar una ficha del cliente y su historial de compras.
+
+Esto alcanza para una pre-validación positiva de gestión básica. #19 debe verificar la trazabilidad real de cancelaciones/reintegros y del flujo de despacho.
+
+Fuentes:
+- https://soporte.donweb.com/hc/es/articles/18571940356884-Administrar-ventas-en-SitioSimple
+- https://soporte.donweb.com/hc/es/articles/18548443651860-Ver-datos-de-clientes-en-Sitio-Simple
 
 ## SEO, marketing y medición
 
-SitioSimple documenta:
+SitioSimple publica/documenta:
 
-- configuración de títulos, descripciones y URLs amigables;
-- Google Shopping mediante feed;
+- títulos, descripciones y URLs amigables;
+- Google Shopping;
 - Facebook Pixel;
 - blog;
 - integración con redes sociales;
-- Email Marketing incluido.
+- Email Marketing;
+- estadísticas propias de ventas, visitas, fuentes de tráfico, navegadores y ubicación geográfica.
 
-Como en las otras plataformas, esto resuelve herramientas técnicas pero no sustituye el procedimiento editorial de `../playbook/04-seo-y-publicacion.md`.
+Para nuestro caso no alcanza con un dashboard: #19 debe verificar UTMs y medición de compra/revenue por fuente/campaña según `measurement.md`.
+
+Como en las otras plataformas, estas herramientas técnicas no sustituyen el procedimiento editorial de `../playbook/04-seo-y-publicacion.md`.
 
 Fuentes:
 - https://donweb.com/es-ar/crear-sitio-web
-- https://soporte.donweb.com/hc/es/articles/23530424327956-Integrar-mi-tienda-con-Google-Shopping
-- https://soporte.donweb.com/hc/es/articles/41953108813972-Configurar-Facebook-Pixel
+- https://soporte.donweb.com/hc/es/articles/18539242603796-Estad%C3%ADsticas-de-mi-SitioSimple
+- https://soporte.donweb.com/hc/es/articles/18541389710356-Integraciones-en-SitioSimple
 
 ## Usuarios y permisos
 
 Este punto es una fortaleza para nuestro modelo operativo.
 
-La versión actual de SitioSimple permite crear usuarios y seleccionar las secciones a las que cada usuario tendrá acceso. También permite activar/desactivar usuarios y modificar permisos.
+La versión actual de SitioSimple permite:
 
-A nivel de la cuenta DonWeb existe además gestión de usuarios/roles para colaborar sin compartir las credenciales del propietario.
+- crear usuarios separados;
+- seleccionar las secciones a las que cada usuario tiene acceso;
+- activar/desactivar usuarios;
+- modificar permisos;
+- previsualizar qué ve ese usuario.
 
 Esto encaja con la propuesta de que:
 
@@ -134,44 +166,45 @@ Esto encaja con la propuesta de que:
 - Camila tenga su propio acceso para operar;
 - no se compartan contraseñas.
 
-Fuentes:
+Fuente:
 - https://soporte.donweb.com/hc/es/articles/36816025831060-C%C3%B3mo-acceder-al-editor-de-SitioSimple-y-gestionar-usuarios-y-permisos
-- https://soporte.donweb.com/hc/es/articles/31678313142164-Gesti%C3%B3n-de-Usuarios
 
 ## Servicio para múltiples comercios
 
-DonWeb ofrece explícitamente **SitioSimple Revendedores**:
+DonWeb ofrece explícitamente SitioSimple para revendedores:
 
+- administración de clientes/sitios;
+- gestión de accesos y permisos;
 - marca blanca;
-- posibilidad de usar logo propio en el panel que ve el cliente;
-- administración centralizada de sitios/clientes;
-- accesos y permisos para clientes;
-- un plan por cada sitio;
-- DonWeb deja al revendedor definir su precio al cliente.
+- posibilidad de entregar acceso autoadministrable al cliente;
+- un plan por cada sitio.
 
-Esto **no forma parte del MVP de Camila** y no justifica construir un SaaS propio, pero reduce fricción si más adelante el mismo servicio se ofrece a otros comercios.
+Esto **no forma parte del MVP** y no cambia la regla de que la tienda/cobros del comercio deben pertenecer al comercio. Sí es una ruta potencial si el servicio se replica luego.
 
-Fuentes:
-- https://donweb.com/es-ar/revende-sitios-web
-- https://donweb.com/es-ar/programa-de-partners
+Fuente:
+- https://mailings.donweb.com/es-ar/revende-sitios-web
 
-## Riesgos / puntos todavía no verificados
+## Ventajas frente a Tiendanube Inicial
 
-Antes de elegirlo hay que validar en la prueba:
+Documentalmente:
 
-1. experiencia real del panel para Camila;
-2. variantes talle/color y actualización de stock;
-3. flujo real pedido → pago → preparación → envío;
-4. qué tan automática es la impresión/generación de etiquetas y seguimiento;
-5. reintegros/cancelaciones desde la operación normal;
-6. cobertura de seguro y logística inversa;
-7. Google Analytics/eventos de e-commerce y calidad de la atribución;
-8. exportación/portabilidad de productos, pedidos y clientes;
-9. cumplimiento práctico del botón de arrepentimiento y páginas legales;
-10. comportamiento del checkout en móvil.
+- permisos diferenciados;
+- más opciones de pago;
+- más opciones de envío;
+- dominio propio disponible sin saltar a Tiendanube Esencial;
+- algunas funciones masivas/Excel;
+- correo/hosting incluidos;
+- modelo revendedor futuro.
 
-## Condición para pasar a final
+## Riesgos frente a Tiendanube Inicial
 
-SitioSimple debería avanzar como candidato final si la prueba demuestra que un operador no técnico puede ejecutar el flujo completo sin depender regularmente de paneles externos o soporte y sin perder trazabilidad de pedidos/pagos/envíos.
+- costo fijo, aunque bajo;
+- Mercado Pago ocurre mediante redirección y cuenta externa;
+- Andreani/OCA pueden requerir cuentas externas;
+- Envia.com exige gestionar el envío desde otro panel;
+- más flexibilidad puede significar más configuración y procedimientos;
+- todavía debemos verificar variantes, reembolsos, eventos de e-commerce, portabilidad y checkout móvil en el trial.
 
-Si el precio bajo se traduce en conciliación manual, saltos frecuentes entre sistemas o flujo de despacho débil, su ventaja económica pierde peso frente a Tiendanube.
+## Próximo paso
+
+Ejecutar #19 usando [`protocolo-prueba-plataformas.md`](protocolo-prueba-plataformas.md). Este documento ya no tiene una decisión pendiente propia: DonWeb permanece en la shortlist hasta que la prueba práctica muestre una restricción concreta.
