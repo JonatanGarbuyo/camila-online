@@ -22,6 +22,8 @@ Elegir la plataforma más simple para que Camila pueda levantar y administrar la
 
 La comparación no debe premiar cantidad de funciones. Debe premiar la **menor complejidad suficiente para operar correctamente**.
 
+La prueba reproducible vive en [`protocolo-prueba-plataformas.md`](protocolo-prueba-plataformas.md) y en el issue #19.
+
 ## Matriz documental preliminar
 
 Esta tabla sirve para orientar la prueba; no reemplaza probar los paneles con el caso real.
@@ -36,11 +38,11 @@ Esta tabla sirve para orientar la prueba; no reemplaza probar los paneles con el
 | Envíos | Andreani/Envío Nube | Andreani, OCA, Envia.com, retiro, propio | Andreani, OCA, Correo Argentino, E-Pick, retiro/personalizados |
 | Dominio de entrada | `*.mitiendanube.com` | `*.misitiosimple.com` | `*.empretienda.com.ar` |
 | Dominio propio | No en Inicial; requiere plan pago y dominio comprado aparte | Sí; anual incluye 1 año de extensiones seleccionadas, `.com/.com.ar` aparte | Sí; dominio se compra aparte |
-| Carga/edición masiva | No en Inicial | Sí; carga/edición vía Excel documentada | Sí |
+| Carga/edición masiva | No en Inicial | Sí; la oferta vigente publica actualización de precios vía Excel; validar alcance completo en versión actual | Sí |
 | Productos/ventas | Sin límites publicados | Catálogo/gestión incluidos | Ilimitados publicados |
-| Usuarios/permisos | Usuarios ilimitados, **todos con acceso total** en Inicial | **Usuarios con permisos por secciones**; DonWeb también tiene roles de cuenta | **Pendiente de verificar**; documentación pública no confirma multiusuario seguro |
+| Usuarios/permisos | **Varios usuarios, todos con acceso total en Inicial**; permisos granulares en planes que los incluyan | **Usuarios con permisos por secciones**; DonWeb también tiene roles de cuenta | **Pendiente de verificar**; documentación pública no confirma multiusuario seguro |
 | SEO | Sitemap/Search Console, SEO de producto/categoría, Google Shopping | Titles/descripciones/URLs, Google Shopping, blog | SEO automático publicado, Google Shopping, blog; validar controles finos |
-| Analítica | GA4 + Meta Pixel/CAPI | Pixel documentado; validar GA/e-commerce events en prueba | Google Analytics + Facebook Pixel publicados |
+| Analítica | GA4 + Meta Pixel/CAPI | Estadísticas propias y Pixel documentados; validar GA/e-commerce events en prueba | Google Analytics + Facebook Pixel publicados |
 | Modelo multi-comercio futuro | Ecosistema de partners/apps, pero el plan Inicial no resuelve permisos granulares | **Revendedores/Partners, marca blanca y gestión de múltiples clientes** explícitos | Permite asesoramiento, pero no se verificó modelo multiusuario/revendedor equivalente |
 | Principal ventaja | Cero costo fijo + flujo local integrado | Bajo costo + flexibilidad + permisos + modelo para administrar clientes | Simplicidad + muchas funciones locales en un único plan |
 | Principal riesgo | Restricciones del plan $0 pueden generar trabajo manual o forzar upgrade caro | Más cuentas/proveedores externos pueden fragmentar operación | Accesos/permisos y profundidad de algunas integraciones todavía poco documentados públicamente |
@@ -51,6 +53,7 @@ Tiendanube:
 - https://www.tiendanube.com/planes-y-precios
 - https://ayuda.tiendanube.com/es_AR/123482-planes/que-funcionalidades-incluye-el-plan-gratuito-de-tiendanube
 - https://ayuda.tiendanube.com/es_AR/pago-nube/que-es-pago-nube
+- https://ayuda.tiendanube.com/es_AR/que-permisos-puedo-asignar-a-los-usuarios-de-mi-tiendanube
 
 DonWeb:
 - [`donweb-sitiosimple.md`](donweb-sitiosimple.md)
@@ -59,6 +62,39 @@ DonWeb:
 
 Empretienda:
 - https://api.empretienda.com/
+- https://api.empretienda.com/terminos-y-condiciones
+
+## Pre-validación documental para #19
+
+### Accesos
+
+- **DonWeb:** documentación vigente confirma usuarios separados, permisos por sección, activación/desactivación y vista previa de lo que ve cada usuario. Es el mejor encaje documental para que comercio y Camila no compartan credenciales.
+- **Tiendanube Inicial:** permite varios usuarios, pero el plan Inicial no permite asignar permisos distintos; todos acceden con alcance total. Es funcional para un piloto solo si el titular acepta expresamente ese nivel de acceso.
+- **Empretienda:** no se encontró documentación pública vigente que confirme colaboradores o usuarios separados. Sus términos indican que cuenta y contraseña son personales, secretas e intransferibles. No se considerará válido compartir la contraseña como solución.
+
+### Catálogo/variantes
+
+- **Tiendanube:** documenta variantes por talle/color/material, combinaciones automáticas y stock, precio, peso y SKU por combinación. La carga masiva no está disponible en Inicial.
+- **Empretienda:** documentación de importación masiva confirma atributos/variantes, stock y SKU; su oferta vigente publica carga masiva, gestión de productos/stock y aumento masivo de precios.
+- **DonWeb:** la oferta vigente publica catálogo, gestión de stock y edición de precios por Excel; la profundidad exacta de variantes en la versión actual se verificará en el trial.
+
+### Pago y operación
+
+- **Tiendanube:** Pago Nube mantiene checkout, transacciones, devoluciones/contracargos y reportes dentro del ecosistema de Tiendanube.
+- **DonWeb:** Mercado Pago se configura con credenciales y el comprador es redirigido al proveedor para pagar y luego vuelve a la tienda. Hay que medir cuántos pasos operativos quedan fuera de SitioSimple.
+- **Empretienda:** publica Mercado Pago, Ualá Bis, transferencia y otros; la profundidad de conciliación/reintegros dentro del panel debe validarse en la prueba.
+
+### Envíos
+
+- **Tiendanube Inicial:** Envío Nube/Andreani centraliza cotización y gran parte de gestión/etiquetas en el administrador.
+- **DonWeb:** ofrece Andreani, OCA, Envia.com, retiro y métodos propios. Envia.com calcula opciones en checkout, pero la gestión efectiva del envío se realiza en la cuenta de Envia.com; Andreani/OCA pueden requerir cuentas propias.
+- **Empretienda:** publica OCA, Correo Argentino, Andreani, E-Pick y métodos personalizados; falta medir qué parte del flujo de etiquetas/seguimiento vive dentro del panel.
+
+### Trial
+
+- **DonWeb:** 15 días gratis y sin tarjeta según oferta vigente.
+- **Empretienda:** la página comercial vigente dice 15 días sin configurar medio de pago. Sus términos públicos aún mencionan 30 días; registrar esta inconsistencia y confirmar la condición que muestre el alta real.
+- **Tiendanube:** no depende de trial; Inicial es un plan $0 permanente.
 
 ## Lectura actual de cada finalista
 
@@ -66,7 +102,7 @@ Empretienda:
 
 Es la referencia a superar por el **plan Inicial de costo fijo $0** y por tener pago y logística integrados en un mismo ecosistema.
 
-Pago Nube tiene una ventaja operativa importante: centraliza pagos, devoluciones, contracargos y reportes dentro del administrador, y la transferencia tiene conciliación automática.
+Pago Nube tiene una ventaja operativa importante: centraliza pagos, devoluciones, contracargos y reportes dentro del administrador.
 
 El costo de esa simplicidad es la rigidez del Inicial:
 
@@ -75,8 +111,8 @@ El costo de esa simplicidad es la rigidez del Inicial:
 - sin dominio propio;
 - sin importación/exportación masiva de productos;
 - sin exportación de ventas/clientes;
-- sin acciones masivas;
-- administradores con acceso total.
+- sin acciones masivas relevantes;
+- varios administradores, pero sin permisos diferenciados.
 
 Si estas restricciones no molestan al volumen inicial, sigue siendo una opción muy fuerte.
 
@@ -87,7 +123,7 @@ La investigación detallada está en [`donweb-sitiosimple.md`](donweb-sitiosimpl
 Sobre documentación pública, ofrece mucho por un costo bajo:
 
 - varios pagos y envíos locales;
-- carga/edición masiva;
+- catálogo/stock y algunas operaciones vía planilla;
 - dominio propio;
 - SEO;
 - usuarios con permisos diferenciados;
@@ -245,33 +281,11 @@ Comparar por separado:
 
 El costo fijo más bajo no gana automáticamente si genera más trabajo manual o errores.
 
-## Prueba práctica propuesta
+## Prueba práctica
 
-Crear la misma mini tienda de prueba en las tres plataformas cuando el trial/free tier lo permita, con:
+El protocolo detallado está en [`protocolo-prueba-plataformas.md`](protocolo-prueba-plataformas.md).
 
-- 3 a 5 productos ficticios;
-- al menos un producto con talle y color;
-- stock limitado;
-- una categoría;
-- una página informativa;
-- configuración de SEO según el playbook;
-- WhatsApp;
-- un método de pago;
-- un método de envío;
-- Analytics/Pixel si el trial lo permite.
-
-Luego ejecutar el mismo recorrido:
-
-1. alta de producto;
-2. actualización de precio/stock;
-3. compra de prueba hasta donde la plataforma permita sin generar cargos innecesarios;
-4. revisión del pedido en administración;
-5. preparación del envío;
-6. simulación de cancelación/reintegro;
-7. búsqueda del producto desde el storefront;
-8. edición SEO;
-9. revisión de métricas disponibles;
-10. creación de un acceso separado para el operador, si existe.
+La mini tienda debe usar datos ficticios idénticos en las tres plataformas y probar: alta, variantes/stock, SEO, accesos, pago, envío, pedido/cancelación/reintegro, métricas, portabilidad, móvil y una jornada operativa simulada.
 
 ## Resultado esperado
 
