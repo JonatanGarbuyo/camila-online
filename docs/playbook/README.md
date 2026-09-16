@@ -94,3 +94,22 @@ El playbook es conocimiento reusable del servicio. Debe poder ser seguido por Ca
 El playbook debe explicar **qué hacer y cómo verificar que quedó bien**. No debe contener contraseñas, tokens, API keys, CUIT de clientes, datos de tarjetas ni credenciales.
 
 Cuando un procedimiento cambie por actualización de un proveedor, actualizar el playbook y registrar fecha/fuente cuando la diferencia sea material.
+
+## SEO/publicación — criterios independientes de plataforma
+
+El procedimiento final se escribirá en `04-seo-y-publicacion.md`, pero desde ahora el playbook debe exigir:
+
+- nombres de producto entendibles por clientes, no códigos internos;
+- descripciones originales con material, calce, medidas/talles, color, cuidados y atributos relevantes;
+- categorías basadas en cómo busca la gente, no solo en organización interna;
+- título SEO y meta descripción revisados antes de publicar;
+- URL corta y descriptiva cuando la plataforma permita editarla;
+- imágenes nítidas y texto alternativo descriptivo cuando esté disponible;
+- guía de talles en texto/HTML además de imágenes cuando sea posible;
+- páginas de contenido: quiénes somos, cómo comprar, envíos, cambios/devoluciones, preguntas frecuentes y contacto;
+- Search Console + sitemap una vez pública la tienda;
+- UTMs en links comerciales de Instagram/Facebook/WhatsApp/referrals;
+- no copiar descripciones del proveedor o de otras tiendas;
+- revisar que precio, stock, variantes, peso y dimensiones sean correctos antes de publicar.
+
+El SEO técnico del proveedor ayuda, pero el contenido y la disciplina editorial siguen siendo responsabilidad del operador.
