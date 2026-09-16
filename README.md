@@ -4,28 +4,21 @@ Repositorio de discovery, decisiones, investigación y documentación operativa 
 
 Este repositorio funciona como **base de conocimiento persistente del proyecto**: los chats son temporales; las decisiones, investigaciones, dudas abiertas, playbooks y contexto que deban sobrevivir entre conversaciones deben quedar documentados acá.
 
-## Navegación
+## Dos entradas distintas
 
-👉 **[Índice general de documentación](docs/INDEX.md)** — usarlo como una wiki navegable en Markdown.
+### Para Camila y otros operadores no técnicos
 
-Otros accesos rápidos:
+👉 [Guía práctica de la tienda](docs/INDEX.md)
 
-- [START-HERE](START-HERE.md) — punto de entrada para chats nuevos.
-- [Mapa Wayfinder](docs/wayfinder/map.md) — estado, decisiones, bloqueos y frontera.
-- [Shortlist de plataformas](docs/research/shortlist-plataformas.md) — Tiendanube vs DonWeb vs Empretienda.
-- [Playbook operativo](docs/playbook/README.md) — manual para levantar y administrar tiendas.
+Esa guía contiene solo procedimientos operativos claros en español: publicación de productos, catálogo, pagos, envíos, atención, métricas y operación diaria a medida que se vayan completando.
 
-## Continue from here
+No debe incluir Wayfinder, Issues ni discusiones internas del proyecto.
 
-Para cualquier chat nuevo, empezar por [`START-HERE.md`](START-HERE.md).
+### Para chats, agentes y trabajo de proyecto
 
-Repositorio: **https://github.com/JonatanGarbuyo/camila-online**
+👉 [START-HERE.md](START-HERE.md)
 
-Mensaje mínimo sugerido:
-
-```text
-Continuá desde https://github.com/JonatanGarbuyo/camila-online y seguí START-HERE.md antes de avanzar.
-```
+Desde ahí se reconstruyen reglas, contexto, Wayfinder, Issues e investigación vigente.
 
 ## Objetivo
 
@@ -41,52 +34,27 @@ Diseñar un MVP de e-commerce **no-code**, de bajo o nulo costo fijo, que cubra:
 
 El primer caso es un comercio de ropa. El aprendizaje debe convertirse progresivamente en un **playbook reusable** para otros comercios, sin construir prematuramente una plataforma/SaaS propia.
 
-## Fuente de verdad y conocimiento
+## Organización del conocimiento
 
-Usamos GitHub para tres tipos de conocimiento durable:
-
-1. **Issues:** preguntas, investigación, discusión, decisiones y aprobaciones.
-2. **`docs/research/`:** hechos verificados, comparaciones y fuentes externas.
-3. **`docs/playbook/`:** manual operativo para levantar, lanzar y administrar tiendas.
-
-No hace falta otra base de conocimiento por ahora. La navegación principal se resuelve con [`docs/INDEX.md`](docs/INDEX.md) e índices temáticos en Markdown.
+- **Issues:** preguntas, investigación en curso, discusión y decisiones.
+- **`docs/research/`:** hechos verificados, comparaciones y fuentes externas.
+- **`docs/wayfinder/`:** estado de discovery y planificación.
+- **`docs/playbook/`:** manual operativo para personas no técnicas.
+- **`docs/INDEX.md`:** portada simple de la guía operativa.
 
 ## Estado de plataforma
 
-**La plataforma final todavía no está decidida.** La shortlist activa quedó reducida a:
+**La plataforma final todavía no está decidida.** La shortlist activa es:
 
-1. **Tiendanube** — baseline por costo fijo $0 en el plan Inicial y buen encaje local.
-2. **DonWeb SitioSimple** — challenger local de costo fijo muy bajo; requiere validación práctica.
-3. **Empretienda** — alternativa local simple y de bajo costo fijo.
+1. Tiendanube
+2. DonWeb SitioSimple
+3. Empretienda
 
-Shopify, Wix, Odoo y otras opciones quedan fuera de la evaluación activa salvo que una restricción concreta invalide las tres finalistas.
-
-La decisión final vive en el issue #9 y requiere aprobación explícita de `@JonatanGarbuyo`.
-
-Ver:
-
-- [Shortlist y prueba comparable](docs/research/shortlist-plataformas.md)
-- [Comparación ampliada de precios y SEO](docs/research/platforms-pricing-seo.md)
-- [Playbook operativo](docs/playbook/README.md)
+Las cuentas de prueba se crearán y operarán manualmente por Camila o Jonatan. La decisión final vive en el issue #9 y requiere aprobación explícita de `@JonatanGarbuyo`.
 
 ## Principio de trabajo
 
 Primero resolvemos decisiones e investigamos restricciones con Wayfinder. No se desarrolla software propio mientras una solución administrada/no-code cubra razonablemente el problema.
-
-**Las decisiones finales requieren aprobación explícita de `@JonatanGarbuyo`.** Otros participantes pueden investigar, debatir y proponer, pero no cerrar decisiones finales en su nombre.
-
-## Al iniciar un chat nuevo
-
-Leer primero:
-
-1. [START-HERE](START-HERE.md)
-2. [Índice general](docs/INDEX.md)
-3. [Reglas del proyecto](PROJECT-RULES.md)
-4. [Contexto y vocabulario](CONTEXT.md)
-5. [Mapa Wayfinder](docs/wayfinder/map.md)
-6. Issues Wayfinder abiertos relevantes
-
-Luego cargar desde `mattpocock/skills` las skills que correspondan.
 
 ## Seguridad
 
