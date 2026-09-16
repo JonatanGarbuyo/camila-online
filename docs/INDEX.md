@@ -13,6 +13,7 @@ El repositorio sigue siendo la fuente canónica. Este índice solo organiza enla
 | Entender el objetivo y las reglas del proyecto | [`../START-HERE.md`](../START-HERE.md) · [`../PROJECT-RULES.md`](../PROJECT-RULES.md) · [`../CONTEXT.md`](../CONTEXT.md) |
 | Ver qué está decidido y qué falta | [`wayfinder/map.md`](wayfinder/map.md) · [Issue #1](https://github.com/JonatanGarbuyo/camila-online/issues/1) |
 | Comparar las tres plataformas finalistas | [`research/shortlist-plataformas.md`](research/shortlist-plataformas.md) |
+| Ejecutar la prueba comparable de las tres | [`research/protocolo-prueba-plataformas.md`](research/protocolo-prueba-plataformas.md) · [Issue #19](https://github.com/JonatanGarbuyo/camila-online/issues/19) |
 | Ver la evaluación específica de DonWeb | [`research/donweb-sitiosimple.md`](research/donweb-sitiosimple.md) |
 | Ver precios, free tiers y SEO investigado | [`research/platforms-pricing-seo.md`](research/platforms-pricing-seo.md) |
 | Aprender a levantar y administrar la tienda | [`playbook/README.md`](playbook/README.md) |
@@ -43,6 +44,7 @@ La decisión final vive en el [Issue #9](https://github.com/JonatanGarbuyo/camil
 ### Trabajo activo para decidir plataforma
 
 - [#19 — prueba práctica comparable de Tiendanube, DonWeb y Empretienda](https://github.com/JonatanGarbuyo/camila-online/issues/19)
+- Protocolo: [`research/protocolo-prueba-plataformas.md`](research/protocolo-prueba-plataformas.md)
 
 ### Decisiones/trabajo que dependen de eso
 
@@ -76,7 +78,8 @@ Estado actual:
 
 ### Plataformas
 
-- [`research/shortlist-plataformas.md`](research/shortlist-plataformas.md) — matriz, condiciones de descarte y prueba de las tres finalistas.
+- [`research/shortlist-plataformas.md`](research/shortlist-plataformas.md) — matriz y condiciones de descarte de las tres finalistas.
+- [`research/protocolo-prueba-plataformas.md`](research/protocolo-prueba-plataformas.md) — prueba reproducible y hoja de resultados para #19.
 - [`research/donweb-sitiosimple.md`](research/donweb-sitiosimple.md) — evaluación de DonWeb: costo, pagos, envíos, permisos y modelo revendedor.
 - [`research/platforms-pricing-seo.md`](research/platforms-pricing-seo.md) — precios, free tiers y SEO de plataformas evaluadas.
 - [`research/options.md`](research/options.md) — investigación inicial e historial de alternativas.
