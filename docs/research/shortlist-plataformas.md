@@ -1,6 +1,6 @@
 # Shortlist de plataformas para el MVP
 
-_Estado: shortlist acordada para evaluación. No es todavía la decisión final de plataforma._
+_Estado: shortlist reducida por decisión del owner. La plataforma final todavía no está decidida._
 
 _Verificado documentalmente: 2026-09-16. La prueba práctica todavía está pendiente._
 
@@ -8,13 +8,28 @@ _Verificado documentalmente: 2026-09-16. La prueba práctica todavía está pend
 
 1. **Tiendanube**
 2. **DonWeb SitioSimple**
-3. **Empretienda**
 
-Shopify, Wix, Odoo y otras alternativas quedan fuera de la evaluación activa salvo que aparezca una restricción nueva que invalide las tres opciones anteriores.
+## Plataforma descartada en esta etapa
+
+### Empretienda
+
+Empretienda sale de la evaluación activa.
+
+No se descarta porque no pueda cobrar: permite integrar medios de pago de terceros como Mercado Pago, Ualá Bis y transferencia.
+
+Se descarta frente a Tiendanube y DonWeb porque, para este proyecto:
+
+- la documentación pública disponible es bastante menos completa;
+- no presenta una pasarela propia/integrada comparable a Pago Nube;
+- depende de proveedores externos para pagos;
+- sigue poco claro el modelo de usuarios/permisos para que Camila administre sin compartir credenciales;
+- Tiendanube y DonWeb ofrecen hoy una propuesta más clara para comparar operación, costos y soporte.
+
+Puede reabrirse solo si las dos finalistas fallan por una restricción concreta.
 
 ## Objetivo
 
-Elegir la plataforma más simple para que Camila pueda administrar la tienda con baja carga operativa, buen encaje con Argentina y costo total razonable.
+Elegir entre Tiendanube y DonWeb la opción más simple para que Camila administre la tienda con baja carga operativa, buen encaje con Argentina y costo total razonable.
 
 ## Regla de fragmentación
 
@@ -22,19 +37,13 @@ La fragmentación se evalúa por **tipo de tarea**, no por proveedor.
 
 ### Pagos
 
-Puede ser aceptable que cobros, conciliación, devoluciones o reintegros se operen en un panel de pago separado del panel principal de la tienda **si Camila y el comercio consideran razonable ese flujo**.
+Puede ser aceptable que cobros, conciliación, devoluciones o reintegros se operen en un panel separado del panel principal de la tienda si Camila y el comercio consideran razonable ese flujo.
 
-No importa si el proveedor es Mercado Pago, Pago Nube, Mobbex, Ualá u otro: lo que se evalúa es la carga operativa de cambiar de sistema y mantener trazabilidad.
+Lo que se evalúa es la carga operativa de cambiar de sistema y mantener trazabilidad.
 
 ### Envíos
 
-Es una desventaja fuerte que la operación normal obligue a entrar habitualmente en otro panel para:
-
-- generar o pagar etiquetas;
-- preparar despachos;
-- consultar tracking;
-- cancelar envíos;
-- resolver incidencias.
+Es una desventaja fuerte que la operación normal obligue a entrar habitualmente en otro panel para generar o pagar etiquetas, preparar despachos, consultar tracking, cancelar envíos o resolver incidencias.
 
 Preferir logística integrada o un flujo externo tan directo que no agregue trabajo cotidiano relevante.
 
@@ -71,20 +80,6 @@ Riesgo principal:
 
 - validar que pagos y, especialmente, envíos no fragmenten demasiado la operación diaria.
 
-### Empretienda
-
-Fortalezas:
-
-- un único plan local simple;
-- carga masiva;
-- varios pagos/envíos;
-- dominio propio;
-- Analytics/Pixel/Shopping publicados.
-
-Pendiente crítico:
-
-- verificar acceso delegado/multiusuario seguro sin compartir contraseña.
-
 ## Condiciones de descarte
 
 ### Tiendanube Inicial deja de ser suficiente si…
@@ -103,16 +98,11 @@ Pendiente crítico:
 - analytics/atribución son insuficientes;
 - el checkout móvil tiene fricción material.
 
-### Empretienda deja de ser suficiente si…
-
-- no permite accesos separados y seguros;
-- obliga a compartir contraseña;
-- la fragmentación de pagos o envíos resulta operativamente incómoda;
-- SEO, portabilidad o reporting no alcanzan el procedimiento requerido.
-
 ## Prueba práctica
 
 Las cuentas y pruebas se ejecutarán manualmente por Camila o Jonatan siguiendo `docs/research/protocolo-prueba-plataformas.md`.
+
+La prueba activa compara solamente **Tiendanube y DonWeb**.
 
 No usar credenciales, cuentas sensibles ni medios de pago reales en GitHub.
 
