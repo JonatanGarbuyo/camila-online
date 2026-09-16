@@ -29,46 +29,41 @@ El resultado de este mapa es **decisión y especificación, no implementación p
 - **Pagos orientados a costo/conversión:** permitir tarjeta y favorecer transferencia cuando sea razonable.
 - **Atención humana por WhatsApp:** bots/IA quedan para una futura necesidad de escala.
 - **Subdominio aceptable para validación:** dominio propio no bloquea el MVP.
+- **[Comparar plataformas no-code para el MVP](https://github.com/JonatanGarbuyo/camila-online/issues/2):** Tiendanube Inicial queda como baseline a validar por costo fijo $0; Empretienda como fallback si una restricción concreta bloquea el caso; WhatsApp Business + links de pago queda como canal auxiliar, no storefront principal.
 
 ## Frontier
 
-### Research — Comparar plataformas no-code de bajo/nulo costo
-**Question:** ¿Qué plataforma cubre mejor el MVP de Camila con el menor costo total y menor carga operativa?
+### Research — [Evaluar pagos y costo efectivo por venta](https://github.com/JonatanGarbuyo/camila-online/issues/3)
+**Question:** ¿Qué combinación de medios de pago y plazo de acreditación conviene para el MVP, considerando costo efectivo, conversión, cuotas, conciliación y operación?
 
-Candidatas iniciales:
-1. Tiendanube Inicial.
-2. Empretienda.
-3. Social-first: WhatsApp Business + Mercado Pago Link + logística manual.
+Estado: investigación inicial en `docs/research/payments.md`.
 
-Estado: investigación inicial en `docs/research/options.md`.
-
-### Research — Validar logística para indumentaria
-**Question:** ¿Andreani mediante Tiendanube Inicial cubre bien el flujo nacional de ropa y qué costos/condiciones de seguro importan?
+### Research — [Validar logística nacional y seguro para indumentaria](https://github.com/JonatanGarbuyo/camila-online/issues/4)
+**Question:** ¿Andreani mediante el plan Inicial cubre correctamente el MVP de indumentaria para envíos nacionales, y qué política de seguro/cobertura conviene?
 
 Estado: investigación inicial en `docs/research/shipping-insurance.md`.
 
-### Research — Diseñar atribución mínima viable
-**Question:** ¿Qué combinación mínima permite medir clicks, fuente/campaña, checkout y ventas sin sumar costo fijo?
+### Research — [Definir atribución y métricas mínimas](https://github.com/JonatanGarbuyo/camila-online/issues/5)
+**Question:** ¿Qué medición mínima permite atribuir visitas y ventas a Instagram, Facebook, WhatsApp y referidos sin sumar costo fijo ni complejidad innecesaria?
 
 Estado: propuesta inicial en `docs/research/measurement.md`.
 
-### Grilling — Definir operación diaria de Camila
-**Question:** ¿Quién mantiene productos, precios y stock; con qué frecuencia cambia; cómo prepara/despacha pedidos; y cuánto trabajo manual diario es aceptable?
+### Grilling — [Definir operación diaria de catálogo, stock y despacho](https://github.com/JonatanGarbuyo/camila-online/issues/6)
+**Question:** ¿Cómo se administran hoy productos, precios y stock; con qué frecuencia cambian; quién prepara/despacha pedidos; y cuánto trabajo manual diario es aceptable para Camila?
 
-Bloquea: decisión final de plataforma y playbook operativo.
+### Grilling — [Definir catálogo, variantes y política de stock](https://github.com/JonatanGarbuyo/camila-online/issues/7)
+**Question:** ¿Cuántos productos/SKUs y variantes maneja el negocio, cómo se representan talles y colores, y qué política debe aplicarse ante stock bajo o agotado?
 
-### Grilling — Definir restricciones físicas del catálogo
-**Question:** ¿Cuántos SKUs/variantes hay aproximadamente, cómo se manejan talles/colores y qué volumen de pedidos sería éxito en la primera etapa?
+## Blocked
 
-Bloquea: validación práctica de carga de catálogo y operación.
+- [Definir cambios, devoluciones y logística inversa](https://github.com/JonatanGarbuyo/camila-online/issues/8) — blocked by #6 y #7.
+- [Elegir plataforma del MVP](https://github.com/JonatanGarbuyo/camila-online/issues/9) — blocked by #3, #4, #5, #6, #7 y #8. Esta es la decisión final y requerirá aprobación explícita de `@JonatanGarbuyo`.
 
 ## Not yet specified
 
-- Flujo de cambios/devoluciones, especialmente cambios de talle.
-- Política de stock agotado y reservas.
-- Packaging y proceso de despacho.
-- Prototipo visual del storefront una vez elegida la plataforma.
+- Packaging y proceso de despacho, hasta conocer la operación actual.
 - Facturación fiscal/ARCA y automatización contable según situación del negocio.
+- Prototipo visual del storefront una vez elegida la plataforma.
 - Criterio concreto para pasar de subdominio a dominio propio/plan pago.
 - Umbral de volumen que justificaría automatización de WhatsApp, stock o reporting.
 - Qué partes del playbook podrían repetirse para un segundo comercio de otro rubro.
