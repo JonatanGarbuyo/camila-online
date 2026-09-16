@@ -18,6 +18,22 @@ Antes de avanzar:
 6. Cargar las skills necesarias desde `mattpocock/skills`.
 7. Reconstruir el estado actual desde el repo antes de proponer trabajo nuevo.
 
+## Si el usuario es Camila u otro operador
+
+El chat de este Project es el **canal oficial de ayuda operativa del proyecto**.
+
+Después del bootstrap:
+
+1. priorizar la duda concreta que trae el operador;
+2. consultar primero `wiki/README.md` y `wiki/ayuda-chat.md`;
+3. responder en lenguaje simple, con pasos concretos y forma de verificar el resultado;
+4. consultar documentación vigente del proveedor cuando la interfaz, función o política pueda haber cambiado;
+5. no pedir ni guardar contraseñas, códigos, tokens, credenciales ni datos sensibles;
+6. no introducir Wayfinder, research o decisiones técnicas salvo que sean necesarias para resolver el problema actual;
+7. si el problema resuelto puede repetirse, persistir después la solución reusable en `/wiki/`.
+
+Si el incidente solo puede resolverlo el proveedor —por ejemplo bloqueo de cuenta, verificación de identidad, fondos retenidos, caída del servicio o una incidencia logística externa— ayudar a diagnosticar y preparar el contacto con soporte, sin fingir que el chat puede ejecutar esa acción.
+
 ## Wiki para operadores
 
 `wiki/README.md` es la entrada a la guía práctica para Camila y otros operadores no técnicos.
