@@ -1,13 +1,13 @@
 # Investigación — índice temático
 
-[← Volver al índice general](../INDEX.md)
+Esta carpeta conserva investigación verificable y fuentes externas. No es el manual operativo.
 
-Esta carpeta conserva investigación verificable y fuentes externas. No es el manual operativo: cuando un hallazgo se convierte en procedimiento para Camila, debe reflejarse en `../playbook/`.
+Cuando un hallazgo se convierte en procedimiento para Camila u otro operador no técnico, debe transformarse en una guía dentro de [`/wiki/`](../../wiki/README.md).
 
 ## Plataformas
 
 - [`shortlist-plataformas.md`](shortlist-plataformas.md) — shortlist activa: Tiendanube, DonWeb SitioSimple y Empretienda; matriz y condiciones de descarte.
-- [`protocolo-prueba-plataformas.md`](protocolo-prueba-plataformas.md) — protocolo reproducible para #19: datos ficticios, gates, pasos y hoja de resultados.
+- [`protocolo-prueba-plataformas.md`](protocolo-prueba-plataformas.md) — protocolo manual para #19: datos ficticios, gates, pasos y hoja de resultados.
 - [`donweb-sitiosimple.md`](donweb-sitiosimple.md) — evaluación específica de DonWeb: precio, pagos, envíos, SEO, permisos y modelo revendedor.
 - [`platforms-pricing-seo.md`](platforms-pricing-seo.md) — free tiers, precios, planes y capacidades SEO.
 - [`options.md`](options.md) — exploración inicial de alternativas y contexto histórico.
@@ -24,8 +24,9 @@ Esta carpeta conserva investigación verificable y fuentes externas. No es el ma
 - [`legal-consumer.md`](legal-consumer.md) — arrepentimiento, devoluciones y obligaciones mínimas de consumo.
 - [`fiscal-invoicing.md`](fiscal-invoicing.md) — facturación, titularidad y separación entre comercio vendedor y administrador del canal.
 
-## De investigación a procedimiento
+## Regla de separación
 
-El conocimiento operativo reusable se convierte en instrucciones dentro de [`../playbook/README.md`](../playbook/README.md).
+- `docs/research/`: fuentes, restricciones, comparaciones y razonamiento interno.
+- `wiki/`: instrucciones prácticas para operadores no técnicos.
 
-Regla: mantener acá las fuentes, condiciones vigentes, comparaciones y razonamiento verificable; mantener en el playbook el paso a paso que un operador debe ejecutar.
+No enlazar desde la wiki hacia research interno salvo que exista una necesidad concreta para el operador.
