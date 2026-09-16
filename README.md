@@ -2,44 +2,35 @@
 
 Repositorio de discovery, decisiones y documentación para habilitar una tienda online de alcance nacional para el negocio de Camila.
 
-Este repositorio funciona como **base de conocimiento persistente del proyecto**: los chats son temporales; las decisiones, investigaciones, dudas abiertas y contexto que deban sobrevivir entre conversaciones deben quedar documentados acá.
+Este repositorio funciona como **base de conocimiento persistente y fuente de verdad del proyecto**: los chats son temporales; las decisiones, investigaciones, dudas abiertas y contexto que deban sobrevivir entre conversaciones deben quedar documentados acá.
+
+> **Nuevo chat o nuevo integrante:** empezar siempre por [`START-HERE.md`](START-HERE.md).
 
 ## Continue from here
 
-Para retomar el proyecto desde un chat nuevo, compartir este repositorio:
+Para retomar el proyecto desde un chat nuevo dentro del Project de ChatGPT:
+
+1. Abrir [`START-HERE.md`](START-HERE.md).
+2. Seguir su bootstrap completo antes de proponer trabajo nuevo.
+3. Reconstruir el estado desde el repo y los Issues abiertos.
+4. Al terminar trabajo significativo, persistir en el repo el conocimiento durable.
+
+Repositorio:
 
 **https://github.com/JonatanGarbuyo/camila-online**
 
-Mensaje recomendado para iniciar el chat:
+Mensaje mínimo si hiciera falta iniciar un chat manualmente:
 
 ```text
-Continuá el proyecto Camila Online desde este repositorio:
-https://github.com/JonatanGarbuyo/camila-online
-
-Antes de avanzar:
-1. Leé README.md, PROJECT-RULES.md, docs/CHAT-BOOTSTRAP.md y CONTEXT.md.
-2. Revisá el mapa Wayfinder y los GitHub Issues abiertos.
-3. Cargá desde https://github.com/mattpocock/skills las skills de Matt que correspondan; para discovery prolongado, empezá por wayfinder y sus dependencias.
-4. Tratá el repositorio como fuente de verdad y memoria persistente del proyecto.
-5. No guardes secretos ni datos sensibles.
-6. Si el usuario no es técnico, explicá riesgos o acciones inseguras en lenguaje simple y proponé una alternativa segura.
-7. No ejecutes código ni hagas desarrollo salvo que @JonatanGarbuyo lo pida explícitamente.
-8. Ninguna decisión final queda aprobada sin confirmación explícita de @JonatanGarbuyo.
-
-Primero reconstruí el estado desde el repo y resumí: decisiones cerradas, decisiones pendientes y frontera actual de Wayfinder. No empieces una nueva línea de trabajo antes de hacerlo.
+Continuá el proyecto Camila Online desde https://github.com/JonatanGarbuyo/camila-online.
+Leé y seguí START-HERE.md antes de avanzar. El repo es la fuente de verdad y el conocimiento durable del proyecto debe volver al repo.
 ```
 
-### Link directo a ChatGPT
+### Project de ChatGPT
 
-Si se usa un enlace compartido de un Project de ChatGPT, el destinatario puede entrar al proyecto y abrir un chat nuevo desde allí. El repositorio sigue siendo la fuente de verdad durable.
+El Project compartido debe tener instrucciones propias que obliguen a cada chat a usar este repositorio como fuente de verdad y a seguir `START-HERE.md`.
 
-ChatGPT no documenta actualmente un parámetro URL estable que cree un chat nuevo y envíe automáticamente el primer mensaje. En algunas superficies `?prompt=<texto>` puede precargar el compositor, pero debe tratarse como una comodidad no garantizada, no como parte del protocolo del proyecto.
-
-Si se usa ese mecanismo, el texto mínimo a precargar debe ser:
-
-```text
-Continuá desde https://github.com/JonatanGarbuyo/camila-online y seguí la sección "Continue from here" del README.
-```
+El repo sigue siendo canónico aunque ChatGPT pueda usar contexto de otros chats del Project. Si hay contradicción entre memoria/conversaciones y el repo, verificar el estado actual del repo y tratar la contradicción explícitamente antes de continuar.
 
 ## Objetivo
 
@@ -58,18 +49,6 @@ Primero resolvemos decisiones e investigamos restricciones con Wayfinder. No se 
 
 **Las decisiones finales requieren aprobación explícita de `@JonatanGarbuyo`.** Otros participantes pueden investigar, debatir y proponer, pero no cerrar decisiones finales en su nombre.
 
-## Al iniciar un chat nuevo
-
-Leer primero:
-
-1. [Reglas del proyecto](PROJECT-RULES.md)
-2. [Bootstrap para chats](docs/CHAT-BOOTSTRAP.md)
-3. [Contexto y vocabulario](CONTEXT.md)
-4. [Mapa Wayfinder](docs/wayfinder/map.md)
-5. Issues Wayfinder abiertos relevantes
-
-Luego cargar desde `mattpocock/skills` las skills que correspondan. Para discovery prolongado: `wayfinder`, `grilling`, `domain-modeling` y, según la pregunta, `research` o `prototype`.
-
 ## Seguridad
 
 No guardar secretos, contraseñas, tokens, API keys ni datos privados de clientes en este repositorio. Las alertas para usuarios no técnicos deben explicar los riesgos en lenguaje simple y proponer una alternativa segura.
@@ -78,8 +57,9 @@ No guardar secretos, contraseñas, tokens, API keys ni datos privados de cliente
 
 El proyecto está en fase de **discovery / Wayfinder**.
 
+- [START HERE](START-HERE.md)
 - [Reglas operativas](PROJECT-RULES.md)
-- [Bootstrap para chats](docs/CHAT-BOOTSTRAP.md)
+- [Bootstrap detallado para chats](docs/CHAT-BOOTSTRAP.md)
 - [Mapa Wayfinder](docs/wayfinder/map.md)
 - [Opciones iniciales](docs/research/options.md)
 - [Pagos](docs/research/payments.md)
