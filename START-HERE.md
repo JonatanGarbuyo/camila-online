@@ -10,17 +10,22 @@ Los chats sirven para investigar, discutir y trabajar. Todo conocimiento que deb
 
 No asumir que otro chat conoce una conversación anterior si ese conocimiento no quedó persistido acá.
 
+## Navegación
+
+Después de este archivo, usar [`docs/INDEX.md`](docs/INDEX.md) como índice general de la documentación. Funciona como la “wiki en Markdown” del proyecto y enlaza al estado actual, investigación, playbook e Issues.
+
 ## Bootstrap obligatorio de cada chat
 
 Antes de avanzar:
 
 1. Leer `README.md`.
-2. Leer `PROJECT-RULES.md`.
-3. Leer `CONTEXT.md`.
-4. Leer `docs/wayfinder/map.md`.
-5. Revisar los Issues Wayfinder abiertos relevantes y sus comentarios.
-6. Cargar desde `mattpocock/skills` las skills que correspondan a la tarea. Para discovery grande, usar `wayfinder` y sus dependencias relevantes (`grilling`, `domain-modeling`, `research`, `prototype` según corresponda).
-7. Reconstruir el estado actual desde el repo antes de proponer trabajo nuevo.
+2. Abrir `docs/INDEX.md` para ubicar la documentación relevante.
+3. Leer `PROJECT-RULES.md`.
+4. Leer `CONTEXT.md`.
+5. Leer `docs/wayfinder/map.md`.
+6. Revisar los Issues Wayfinder abiertos relevantes y sus comentarios.
+7. Cargar desde `mattpocock/skills` las skills que correspondan a la tarea. Para discovery grande, usar `wayfinder` y sus dependencias relevantes (`grilling`, `domain-modeling`, `research`, `prototype` según corresponda).
+8. Reconstruir el estado actual desde el repo antes de proponer trabajo nuevo.
 
 ## Al terminar trabajo significativo
 
@@ -32,7 +37,8 @@ Persistir en el repo solamente conocimiento durable, por ejemplo:
 - decisiones aprobadas;
 - riesgos o problemas detectados;
 - cambios en el mapa Wayfinder;
-- nuevas preguntas que deban resolverse después.
+- nuevas preguntas que deban resolverse después;
+- nuevos documentos durables agregados también a `docs/INDEX.md` o a su índice temático.
 
 No guardar conversación transitoria, ruido ni duplicar información sin necesidad.
 
